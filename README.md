@@ -3,14 +3,12 @@ q2_project
 #1 Schema/ERD: see Strategy folder
 
 #2 Server Routes plan
-POST/signup for Team Memebers
-POST/login for Team Members
+-POST /login for Team Members
+-POST /problem to database, return req.body
+-POST /query to database
 
-GET/Retrieve team members user info
-DELETE/Delete a team member account
-
-POST'/'posting to database
-POST/{}search from database
+Stretch Goals:
+-GET /Retrieve team member user info on Admin view
 
 #3 Wireframe
 See Strategy folder

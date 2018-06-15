@@ -1,9 +1,9 @@
 #Pre-Code:
-1. Schema/ERD
-2. Server routes plan
-3. detailed wireframe- Sketch (Aimee)
-4. style guide - Sketch (Aimee)
-5. Link to planning tool (Trello)
+1. Schema/ERD: done
+2. Server routes plan: done
+3. detailed wireframe- Sketch:
+4. style guide: done
+5. Link to planning tool (Trello): done
    1. User centered stories
 
 #Team Standup
@@ -12,7 +12,7 @@
 3. Any blocks
 
 
-#Repo:
+Done List
 
 1. Created a new repo on gitHub
 2. cloned to local computer
@@ -20,19 +20,12 @@
    1. added node_modules, .env and DS_Store
 4. Created a package.json
    1. npm init -y
-5. Public folder created
-   1. HTML
-   2. CSS
+5. Created following folders/files:
+   1.Public folder created
+      1. HTML
+      2. CSS
+   2. Server.js
 6. Created branches: azbranch and mpBranch
-
-#Routes
-//auth for team users form
-POST /signup
-POST /login
-
-//Team Users
-GET /  Retrieve team user information
-DELETE / Delete a team user account
-
-POST /form  (writes to the database)
-POST /{} (post for searching and returns data from db)
+7. create .env file
+8. npm install express
+      -create server.js

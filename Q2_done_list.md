@@ -27,5 +27,5 @@ Done List
    2. Server.js
 6. Created branches: azbranch and mpBranch
 7. create .env file
-8. npm install express
+8. npm install express (AZ done; MP needs to Run npm intall)
       -create server.js

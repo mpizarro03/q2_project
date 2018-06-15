@@ -9,43 +9,34 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
-
-// write a route for getting all of the cookies, respond with a 200 status code
-
-app.get('/cookies', function(req, res, next){
-  res.sendStatus(200)
-})
-
-// write a route for getting one of the cookies, respond with the parameter id and make sure the id is converted to a string before sending
-app.get('/cookies/:id', function(req,res,next){
-  res.status(200).send(req.params.id)
-})
-
-// write a route for creating a cookie, return the body of the request that was sent to your route
-
-app.post('/cookies', function(req, res, next){
+//route for posting to database, return the body of the request that was sent to your route
+app.post('/', function(req, res, next){
   res.status(200).send(req.body)
 })
 
-// write a patch route for editing a cookie, return an object with the id and the change that was requested
-app.patch('/cookies/:id', function(req,res, next){
-  let result = {id:req.params.id, name: req.body.name}
-  res.status(200).send(result)
+//route for posting to the Query page, return the body of the request that was sent to your route
+app.post('/{}', function(req, res, next){
+  res.status(200).send(req.body)
 })
 
-// write a route for deleting one of the cookies, respond with the parameter id
+//route for creating a login for Team Members, return the body of the request that was sent to your route
+app.post('/signup', function(req, res, next){
+  res.status(200).send(req.body)
+})
+//route for getting team members user info, respond with a 200 status code
+app.get('/', function(req, res, next){
+  res.sendStatus(200)
+})
+//route for deleting team member, respond with the parameter id
 app.delete('/cookies/:id', function(req,res,next){
   res.status(200).send(req.params.id)
 })
 
-// write a catch all route that will respond with status of 418 ;)
-//https://sitesdoneright.com/blog/2013/03/what-is-418-im-a-teapot-status-code-error
-
+// write a catch all route that will respond with status of ?
 app.use(function(req,res,next){
-  res.sendStatus(418)
+  res.sendStatus()
 })
-
-/* don't change the code below this line */
+//route for listening on the port
 app.listen(port, function(){
   console.log("listening on port", port);
 })

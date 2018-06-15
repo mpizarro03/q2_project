@@ -1,11 +1,3 @@
-#Pre-Code:
-1. Schema/ERD: done
-2. Server routes plan: done
-3. detailed wireframe- Sketch:
-4. style guide: done
-5. Link to planning tool (Trello): done
-   1. User centered stories
-
 #Team Standup
 1. What did you finish yesterday
 2. What are you working on today

@@ -9,6 +9,9 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
+app.get('/', function(req, res, next){
+  res.status(200).json("this route is working")
+})
 //route for creating a log-in for Team Members, return the body of the request that was sent to your route
 app.post('/login', function(req, res, next){
   res.status(200).send(req.body)
@@ -16,7 +19,7 @@ app.post('/login', function(req, res, next){
 
 //route for posting to database, return the body of the request that was sent to your route
 app.post('/', function(req, res, next){
-  res.status(200).send(req.body)
+  res.status(200).json("this route is working")
 })
 
 //route for posting to the Query page, return the body of the request that was sent to your route
@@ -26,7 +29,7 @@ app.post('/', function(req, res, next){
 
 // write a catch all route that will respond with status of ?
 app.use(function(req,res,next){
-  res.sendStatus()
+  res.sendStatus(404)
 })
 //route for listening on the port
 app.listen(port, function(){
@@ -35,9 +38,9 @@ app.listen(port, function(){
 
 //Stretch goals:
 //route for getting team members user info(admin page), respond with a 200 status code
-app.get('/', function(req, res, next){
-  res.sendStatus(200)
-})
+// app.get('/', function(req, res, next){
+//   res.sendStatus(200)
+// })
 
 // your server should be named app since that is what is being exported here
 module.exports = app;

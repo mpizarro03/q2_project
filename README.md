@@ -9,6 +9,7 @@ q2_project
 
 Stretch Goals:
 -GET /Retrieve team member user info on Admin view
+-GET / all problems
 
 #3 Wireframe
 See Strategy folder

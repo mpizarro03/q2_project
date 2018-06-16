@@ -3,6 +3,14 @@
 2. What are you working on today
 3. Any blocks
 
+6/15/18- Weekend to do list:
+-front end code
+  -Form page
+  -Query page
+  -Login page
+-Style Guide
+
+```
 
 Done List
 
@@ -19,5 +27,10 @@ Done List
    2. Server.js
 6. Created branches: azbranch and mpBranch
 7. create .env file
-8. npm install express (AZ done; MP needs to Run npm intall)
-      -create server.js
+8. npm install:
+    -Express
+    -Body-parser
+    -Bcrypt
+    -Knex
+    -dotenv
+    -pg

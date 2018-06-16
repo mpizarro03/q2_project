@@ -3,14 +3,21 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
 const bodyParser = require('body-parser')
+const knex = require('./knex');
 
 // Use body parser https://www.npmjs.com/package/body-parser
 // See Express/Connect top-level generic for code to use here
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
-app.get('/', function(req, res, next){
-  res.status(200).json("this route is working")
+//route for reading all records
+app.get('/', (req, res, next) => {
+  knex('problems')
+  .then(results => {
+    res.send(results);
+  })
+  //
+  // res.status(200).json("this route is working")
 })
 //route for creating a log-in for Team Members, return the body of the request that was sent to your route
 app.post('/login', function(req, res, next){

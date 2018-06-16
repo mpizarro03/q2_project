@@ -1,7 +1,6 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('problems', table => {
     table.increments()
-    table.string('viewpoint').notNullable()
     table.string('noun').notNullable()
     table.string('action').notNullable()
     table.string('reason').notNullable()
@@ -9,12 +8,12 @@ exports.up = function(knex, Promise) {
     table.string('lat', 40).notNullable()
     table.string('long', 40).notNullable()
     table.integer('age').notNullable()
-    table.integer('genders_id').unsigned();
-    table.foreign('genders_id').references('genders.id').onDelete('CASCADE')
-    table.integer('problems_id').unsigned();
-    table.foreign('problems_id').references('problems.id').onDelete('CASCADE')
-    table.integer('races_id').unsigned();
-    table.foreign('races_id').references('races.id').onDelete('CASCADE')
+    table.integer('gender_id').unsigned();
+    table.foreign('gender_id').references('genders.id').onDelete('CASCADE')
+    table.integer('type_id').unsigned();
+    table.foreign('type_id').references('types.id').onDelete('CASCADE')
+    table.integer('race_id').unsigned();
+    table.foreign('race_id').references('races.id').onDelete('CASCADE')
     table.timestamp("created_at").defaultTo(knex.fn.now())
   })
 };

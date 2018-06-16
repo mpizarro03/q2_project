@@ -15,19 +15,16 @@
     <meta charset="utf-8">
     <title>Xperience Garage</title>
 
-    <!--reCAPTCHA-->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
 
   <body>
     <div class="container">
       <div class="row">
         <form id="form" class="col s12 m10 l8">
-          <h2 class="row">Example:</h2>
-          <h2 class="row">Wouldn’t it be great if Whole Foods would start  using recyclable materials so that we wouldn’t waste so much plastic.</h2>
+          <h2 class="row">Problems matching your search:</h2>
           <div class="row">
             <div class="input-field col s12 m8 l6">
-              <select>
+              <select multiple>
                 <option value="" disabled selected></option>
                 <option value="1">Environment/Nature</option>
                 <option value="2">Community/Neighborhood</option>
@@ -45,16 +42,11 @@
               <label>My topic is related to...</label>
             </div>
           </div>
-          <h2 class="row">About me...</h2>
-          <div class="row">
-            <div class="input-field col s3">
-              <input id="age" type="number" class="validate">
-              <label for="age">Age</label>
-            </div>
-          </div>
+
+
           <div class="row">
             <div class="input-field col s12 m8 l6">
-              <select>
+              <select multiple>
                 <option value="" disabled selected></option>
                 <option value="1">Gender Non Conforming</option>
                 <option value="2">Transgender Woman</option>
@@ -88,59 +80,9 @@
             <a href="#">Location</a>
           </div>
           <div class="row">
-            <p>
-              <label>
-                <input name="group1" type="radio" checked />
-                <span>I want something to happen...</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input name="group1" type="radio" checked />
-                <span>I want something to stop...</span>
-              </label>
-            </p>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 m8 l6">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Wouldn't it be great if</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 m8 l6">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">would</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 m8 l6">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">so that</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 m8 l6">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Would you like to share anything else with us?</label>
-            </div>
-          </div>
-          <div class="row">
-            <p>
-              <label>
-                <input type="checkbox" class="filled-in"/>
-                <span>I agree to the Xperience Garage Terms & Conditions</span>
-              </label>
-            </p>
-          </div>
-          <div class="row">
             <button class="btn waves-effect waves-light" type="submit" name="action">Submit
             </button>
           </div>
-          <!-- <div class="row">
-            <div class="g-recaptcha" data-sitekey="6LddA18UAAAAAPEkpDqx9v1VvEySDEBy7FnnDgZa">
-            </div>
-          </div> -->
         </form>
       </div>
     </div>
@@ -154,8 +96,8 @@
     <!--Import materialize.min.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
-    <!--index.js-->
-    <script type="text/javascript" src="index.js">
+    <!--team.js-->
+    <script type="text/javascript" src="team.js">
     </script>
   </body>
 </html>

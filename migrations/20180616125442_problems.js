@@ -8,11 +8,11 @@ exports.up = function(knex, Promise) {
     table.string('lat', 40).notNullable()
     table.string('long', 40).notNullable()
     table.integer('age').notNullable()
-    table.integer('gender_id').unsigned();
+    table.integer('gender_id').unsigned()
     table.foreign('gender_id').references('genders.id').onDelete('CASCADE')
-    table.integer('type_id').unsigned();
+    table.integer('type_id').unsigned()
     table.foreign('type_id').references('types.id').onDelete('CASCADE')
-    table.integer('race_id').unsigned();
+    table.integer('race_id').unsigned()
     table.foreign('race_id').references('races.id').onDelete('CASCADE')
     table.timestamp("created_at").defaultTo(knex.fn.now())
   })

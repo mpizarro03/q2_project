@@ -26,18 +26,58 @@
           <h2 class="row">Example:</h2>
           <h2 class="row">Wouldn’t it be great if Whole Foods would start  using recyclable materials so that we wouldn’t waste so much plastic.</h2>
           <div class="row">
-            <div class="input-field col s12 m8 l6">
-              <select>
-                <option value="" disabled selected></option>
-                <option value="1">Environment/Nature</option>
-                <option value="2">Community/Neighborhood</option>
-                <option value="3">Politics/Human Rights/Greater Good</option>
-                <option value="4">  Company/Organization</option>
-                <option value="5">Products/Services</option>
-                <option value="6">Family/Personal</option>
-                <option value="7">Education/Schools</option>
-              </select>
-              <label>My topic is related to...</label>
+            <div class="row">
+              <div id="topic" class="input-field col s12 m8 l6">
+                <h2>My topic is related to...</h2>
+                <p>
+                  <label>
+                    <input name="group1" type="radio"/>
+                    <span>Environment/Nature</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="group1" type="radio"/>
+                    <span>Community/Neighborhood</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="group1" type="radio"/>
+                    <span>Politics/Human Rights/Greater Good</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="group1" type="radio"/>
+                    <span>Company/Organization</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="group1" type="radio"/>
+                    <span>Products/Services</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="group1" type="radio"/>
+                    <span>Family/Personal</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="group1" type="radio"/>
+                    <span>Education/Schools</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input id="other" name="group1" type="radio"/>
+                    <span>Other</span>
+                  </label>
+                </p>
+              </div>
             </div>
           </div>
           <h2 class="row">About me...</h2>
@@ -50,7 +90,7 @@
           <div class="row">
             <div class="input-field col s12 m8 l6">
               <select>
-                <option value="" disabled selected></option>
+                <option value=""disabled selected>Choose one</option>
                 <option value="1">Gender Non Conforming</option>
                 <option value="2">Transgender Woman</option>
                 <option value="3">Transgender Man</option>
@@ -65,61 +105,40 @@
           <div class="row">
             <div class="input-field col s12 m8 l6">
               <select multiple>
-                <option value="" disabled selected></option>
-                <option value="1">Latino/Hispanic</option>
-                <option value="2">Middle Eastern</option>
-                <option value="3">African</option>
-                <option value="4">Caucasian</option>
-                <option value="5">Caribbean</option>
-                <option value="6">South Asian</option>
-                <option value="7">East Asian</option>
-                <option value="8">Mixed</option>
-                <option value="8">Other</option>
+                <option value="" disabled selected>Select all that apply.</option>
+                <option value="1">Native American or Alaskan Native</option>
+                <option value="2">Asian</option>
+                <option value="3">Black or African American</option>
+                <option value="4">Hispanic or Latino</option>
+                <option value="5">Native Hawaiian or Other Pacific Islander</option>
+                <option value="6">White</option>
               </select>
-              <label>Ethnicity (Choose all that apply)</label>
+              <label>Race</label>
             </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <a href="#">Location</a>
-          </div>
-          <div class="row">
+          </div> -->
+          <div class="row section">
             <p>
               <label>
-                <input name="group1" type="radio"  checked />
+                <input class="viewpoint1" name="group2" type="radio" checked/>
                 <span>I want something to happen...</span>
               </label>
             </p>
             <p>
               <label>
-                <input name="group1" type="radio" checked />
+                <input class="viewpoint2" name="group2" type="radio" checked/>
                 <span>I want something to stop...</span>
               </label>
             </p>
           </div>
-          <div class="row">
-            <div class="input-field col s12 m8 l6" >
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Wouldn't it be great if</label>
-            </div>
+          <div id="madlib" class="row">
           </div>
-          <div class="row">
-            <div class="input-field col s12 m8 l6">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">would</label>
+          <!-- <div class="row">
+            <div class="g-recaptcha" data-sitekey="6LddA18UAAAAAPEkpDqx9v1VvEySDEBy7FnnDgZa">
             </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 m8 l6">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">so that</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 m8 l6">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Would you like to share anything else with us?</label>
-            </div>
-          </div>
+          </div> -->
           <div class="row">
             <p>
               <label>
@@ -132,10 +151,6 @@
             <button class="btn waves-effect waves-light" id="submit-query" type="submit" name="action">Submit
             </button>
           </div>
-          <!-- <div class="row">
-            <div class="g-recaptcha" data-sitekey="6LddA18UAAAAAPEkpDqx9v1VvEySDEBy7FnnDgZa">
-            </div>
-          </div> -->
         </form>
       </div>
     </div>

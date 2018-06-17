@@ -16,6 +16,7 @@ function login(req, res, next){
 }
 function query(req, res, next){
   const search = model.query(req.body)
-  res.status(200).json({data: search})
+  .then(res.status(200).json({data: search}))
 }
+
 module.exports = {getAll, create, login,query}

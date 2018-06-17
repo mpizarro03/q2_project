@@ -1,4 +1,4 @@
-const data = []
+const data = knex('problems')
 
 function create(body) {
   const noun = body.noun
@@ -23,7 +23,8 @@ function create(body) {
     "type_id": type_id,
     "race_id": race_id
   }
-  data.push(problem)
+  knex('problems')
+  .insert(problem)
 }
 
 function getAll() {
@@ -51,7 +52,8 @@ function query(){
     "gender_id": gender_id,
     "race_id": race_id
   }
-  data.push(search)
+  knex('problems')
+  .where(search)
 }
 
 module.exports = {getAll,create,login,query}

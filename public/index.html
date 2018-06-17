@@ -22,7 +22,7 @@
   <body>
     <div class="container">
       <div class="row">
-        <form id="form" class="col s12 m10 l8">
+        <form name="form" class="col s12 m10 l8">
           <h2 class="row">Example:</h2>
           <h2 class="row">Wouldn’t it be great if Whole Foods would start  using recyclable materials so that we wouldn’t waste so much plastic.</h2>
           <div class="row">
@@ -43,7 +43,7 @@
           <h2 class="row">About me...</h2>
           <div class="row">
             <div class="input-field col s3">
-              <input id="age" type="number" class="validate">
+              <input type="number" class="validate">
               <label for="age">Age</label>
             </div>
           </div>
@@ -85,7 +85,7 @@
           <div class="row">
             <p>
               <label>
-                <input name="group1" type="radio" checked />
+                <input name="group1" type="radio"  checked />
                 <span>I want something to happen...</span>
               </label>
             </p>
@@ -97,7 +97,7 @@
             </p>
           </div>
           <div class="row">
-            <div class="input-field col s12 m8 l6">
+            <div class="input-field col s12 m8 l6" >
               <textarea id="textarea1" class="materialize-textarea"></textarea>
               <label for="textarea1">Wouldn't it be great if</label>
             </div>
@@ -123,13 +123,13 @@
           <div class="row">
             <p>
               <label>
-                <input type="checkbox" class="filled-in"/>
+                <input name="checkbox" type="checkbox" class="filled-in"/>
                 <span>I agree to the Xperience Garage Terms & Conditions</span>
               </label>
             </p>
           </div>
           <div class="row">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <button class="btn waves-effect waves-light" id="submit-query" type="submit" name="action">Submit
             </button>
           </div>
           <!-- <div class="row">

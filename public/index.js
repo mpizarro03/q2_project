@@ -94,6 +94,8 @@ $(document).ready(function(){
   //form submit listener
   $('form').on('submit', function(event){
     event.preventDefault()
+
+    console.log("otheranswer:", this)
     console.log("answer:", $(this).serialize())
   })
 })

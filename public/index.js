@@ -8,40 +8,40 @@ $(document).ready(function(){
   const start =
     `<div class="input-field col s12 m8 l6">
       <div class="row">
-        <label for="textarea1">Wouldn't it be great if</label>
-        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="noun">Wouldn't it be great if</label>
+        <textarea id="noun" class="materialize-textarea"></textarea>
       </div>
       <div class="row">
-        <label for="textarea1">would</label>
-        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="action">would</label>
+        <textarea id="action" class="materialize-textarea"></textarea>
       </div>
       <div class="row">
-        <label for="textarea1">so that</label>
-        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="reason">so that</label>
+        <textarea id="reason" class="materialize-textarea"></textarea>
       </div>
       <div class="row">
-        <label for="textarea1">Would you like to share anything else with us?</label>
-        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="story">Would you like to share anything else with us?</label>
+        <textarea id="story" class="materialize-textarea"></textarea>
       </div>
     </div>`
 
   const stop =
     `<div class="input-field col s12 m8 l6">
       <div class="row">
-        <label for="textarea1">It's terrible that</label>
-        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="noun">It's terrible that</label>
+        <textarea id="noun" class="materialize-textarea"></textarea>
       </div>
       <div class="row">
-        <label for="textarea1">is</label>
-        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="action">is</label>
+        <textarea id="action" class="materialize-textarea"></textarea>
         </div>
       <div class="row">
-        <label for="textarea1">because</label>
-        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="reason">because</label>
+        <textarea id="reason" class="materialize-textarea"></textarea>
       </div>
       <div class="row">
-        <label for="textarea1">Would you like to share anything else with us?</label>
-        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="story">Would you like to share anything else with us?</label>
+        <textarea id="story" class="materialize-textarea"></textarea>
       </div>
     </div>`
 

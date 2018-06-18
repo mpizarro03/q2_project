@@ -79,13 +79,13 @@ $(document).ready(function(){
   $('.viewpoint1').on('click', function(){
     $('#madlib').empty()
     $('#madlib').append(start)
-    ev.preventDefault();
+    event.preventDefault();
   })
 
   $('.viewpoint2').on('click', function(){
     $('#madlib').empty()
     $('#madlib').append(stop)
-    ev.preventDefault();
+    event.preventDefault();
   })
 
   // materialize for dropdown menu
@@ -94,9 +94,16 @@ $(document).ready(function(){
   //form submit listener
   $('form').on('submit', function(event){
     event.preventDefault()
+    let raceData = $('#raceOption:selected').text()
+    console.log("raceData:", raceData);
     const formData = {
-      "age": $('#age').val(),
-      "noun": $('#age').val()
+      age: $('#age').val(),
+      // gender: $('#raceOption').checked()
+      noun: $('#noun').val(),
+      action: $('#action').val(),
+      reason: $('#reason').val(),
+      story: $('#story').val(),
+
     }
     console.log(formData)
   })

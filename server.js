@@ -3,7 +3,6 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
 const bodyParser = require('body-parser')
-const knex = require('./knex');
 
 // Use body parser https://www.npmjs.com/package/body-parser
 // See Express/Connect top-level generic for code to use here

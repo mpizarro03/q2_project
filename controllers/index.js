@@ -1,24 +1,22 @@
 const model = require('../models/index.js')
 
 function getAll(req, res, next){
-  const data = model.getAll()
+  model.getAll()
   res.status(200).json({data})
 }
 
 function create(req, res, next){
-
-  console.log("req.body:", req.body)
-  const problem = model.create(req.body)
-  console.log(problem)
-  res.status(201)
+  model.create(req.body)
+  .then(res.status(201))
+  .catch((err) => console.error(`HELLO ${err}`))
 }
 
 function login(req, res, next){
-  const teamUser = model.login(req.body)
+  model.login(req.body)
   res.status(200)
 }
 function query(req, res, next){
-  const search = model.query(req.body)
+  model.query(req.body)
   .then(res.status(200))
 }
 

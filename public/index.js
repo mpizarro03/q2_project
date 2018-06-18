@@ -94,11 +94,16 @@ $(document).ready(function(){
   //form submit listener
   $('form').on('submit', function(event){
     event.preventDefault()
-    let raceData = $('#raceOption:selected').text()
-    console.log("raceData:", raceData);
+    let raceData = $('.race:checked').val()
+    let genderData = $('.gender:checked').val()
+    let topicData = $('.topic:checked').val()
+
+
     const formData = {
       age: $('#age').val(),
-      // gender: $('#raceOption').checked()
+      gender: genderData,
+      race: raceData,
+      topic: topicData,
       noun: $('#noun').val(),
       action: $('#action').val(),
       reason: $('#reason').val(),

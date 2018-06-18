@@ -108,9 +108,9 @@ $(document).ready(function(){
       "story": $('#story').val(),
     }
     console.log(formData)
-    $.post('http://localhost:3000/', formData)
+    $.post('http://localhost:3000', formData)
        .then((result) => {
-         console.log("result:", result)
+         console.log(result)
        })
   })
   //stretch goal

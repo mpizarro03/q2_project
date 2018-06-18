@@ -6,8 +6,11 @@ function getAll(req, res, next){
 }
 
 function create(req, res, next){
+
+  console.log("req.body:", req.body)
   const problem = model.create(req.body)
-  res.status(201).json({data: problem})
+  console.log(problem)
+  res.status(201)
 }
 
 function login(req, res, next){
@@ -16,7 +19,7 @@ function login(req, res, next){
 }
 function query(req, res, next){
   const search = model.query(req.body)
-  .then(res.status(200).json({data: search}))
+  .then(res.status(200))
 }
 
 module.exports = {getAll, create, login,query}

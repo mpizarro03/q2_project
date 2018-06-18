@@ -1,5 +1,5 @@
 const express = require('express')
-const data = []
+// const data = []
 const router = express.Router()
 const ctrl = require('../controllers/index.js')
 

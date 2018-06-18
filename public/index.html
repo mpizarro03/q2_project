@@ -10,6 +10,8 @@
     <!--typekit-->
     <link rel="stylesheet" href="https://use.typekit.net/vpe6yui.css">
 
+    <link rel="stylesheet" href="style.css">
+
     <!--mobile optimization-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
@@ -23,8 +25,12 @@
     <div class="container">
       <div class="row">
         <form name="form" class="col s12 m10 l8">
-          <h2 class="row">Example:</h2>
-          <h2 class="row">Wouldn’t it be great if Whole Foods would start  using recyclable materials so that we wouldn’t waste so much plastic.</h2>
+          <div class="row">
+            <h2>Example:</h2>
+          </div>
+          <div class="row">
+            <h2>Wouldn’t it be great if <span class="highlight">Whole Foods</span><br>would<span class="highlight"> start using recyclable materials</span><br>so that<span class="highlight"> we wouldn’t waste so much plastic.</span></h2>
+          </div>
           <div class="row">
             <div class="row section">
               <h2>My topic is related to...</h2>
@@ -80,10 +86,10 @@
               </div>
             </div>
           </div>
-          <h2 class="row">About me...</h2>
           <div class="row">
+            <h2>About me...</h2>
             <div class="input-field col s3">
-              <input type="number" class="validate">
+              <input type="number" class="validate" max="150" maxlength="3">
               <label for="age">Age</label>
             </div>
           </div>
@@ -102,18 +108,47 @@
               <label>Gender Identity</label>
             </div>
           </div>
+
           <div class="row">
+            <!-- <h6>Race: (select all that apply)</h6> -->
+            <label class="row">Race (Select all that apply)</label>
             <div class="input-field col s12 m8 l6">
-              <select multiple>
-                <option value="" disabled selected>Select all that apply.</option>
-                <option value="1">Native American or Alaskan Native</option>
-                <option value="2">Asian</option>
-                <option value="3">Black or African American</option>
-                <option value="4">Hispanic or Latino</option>
-                <option value="5">Native Hawaiian or Other Pacific Islander</option>
-                <option value="6">White</option>
-              </select>
-              <label>Race</label>
+              <p>
+                <label>
+                  <input type="checkbox"/>
+                  <span>Native American or Alaskan Native</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox"/>
+                  <span>Asian</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox"/>
+                  <span>Black or African American</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox"/>
+                  <span>Hispanic or Latino</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox"/>
+                  <span>Native Hawaiian or Other Pacific Islander</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox"/>
+                  <span>White</span>
+                </label>
+              </p>
             </div>
           </div>
           <div class="row">

@@ -1,4 +1,6 @@
+//where is variable that requires problems?
 const data = knex('problems')
+
 
 function create(body) {
   const noun = body.noun

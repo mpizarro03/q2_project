@@ -10,6 +10,9 @@ const knex = require('./knex');
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
+//how the server serves up your static (client side files)
+app.use(express.static('public'));
+
 //route for reading all records
 app.get('/', (req, res, next) => {
   knex('problems')
@@ -36,7 +39,7 @@ app.post('/', function(req, res, next){
 
 // write a catch all route that will respond with status of ?
 app.use(function(req,res,next){
-  res.sendStatus(404)
+  es.status(404).json({ error: {message: "404 Not Found"}})
 })
 //route for listening on the port
 app.listen(port, function(){

@@ -97,8 +97,6 @@ $(document).ready(function(){
     let raceData = $('.race:checked').val()
     let genderData = $('.gender:checked').val()
     let topicData = $('.topic:checked').val()
-
-
     const formData = {
       "age": $('#age').val(),
       "gender": genderData,
@@ -108,8 +106,19 @@ $(document).ready(function(){
       "action": $('#action').val(),
       "reason": $('#reason').val(),
       "story": $('#story').val(),
-
     }
     console.log(formData)
+    $.post('http://localhost:3000/', formData)
+       .then((result) => {
+         console.log("result:", result)
+       })
   })
+  //stretch goal
+  // $('form').on('submit', function(e){
+  //   e.preventDefault()
+  //   $.post('http://localhost:3000/', $(this).serialize())
+  //     .then((result) => {
+  //       $('#result').html(result)
+  //     })
+  // })
 })

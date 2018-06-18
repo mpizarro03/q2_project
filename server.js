@@ -13,33 +13,33 @@ app.use(bodyParser.json())
 //how the server serves up your static (client side files)
 app.use(express.static('public'));
 
+const xgRoutes = require('./routes/index.js')
+
+app.use('/', xgRoutes)
+
 //route for reading all records
-app.get('/', (req, res, next) => {
-  knex('problems')
-  .then(results => {
-    res.send(results);
-  })
-  //
-  // res.status(200).json("this route is working")
-})
+// app.get('/', (req, res, next) => {
+//   knex('problems')
+//   .then(results => {
+//     res.send(results);
+//   })
+// })
+
 //route for creating a log-in for Team Members, return the body of the request that was sent to your route
-app.post('/login', function(req, res, next){
-  res.status(200).send(req.body)
-})
+
+// app.post('/login', function(req, res, next){
+//   res.status(200).send(req.body)
+// })
 
 //route for posting to database, return the body of the request that was sent to your route
-app.post('/', function(req, res, next){
-  res.status(200).json("this route is working")
-})
 
-//route for posting to the Query page, return the body of the request that was sent to your route
-app.post('/', function(req, res, next){
-  res.status(200).send(req.body)
-})
+// app.post('/', function(req, res, next){
+//   res.status(200).json("this route is working")
+// })
 
 // write a catch all route that will respond with status of ?
 app.use(function(req,res,next){
-  es.status(404).json({ error: {message: "404 Not Found"}})
+  res.status(404).json({ error: {message: "404 Not Found"}})
 })
 //route for listening on the port
 app.listen(port, function(){

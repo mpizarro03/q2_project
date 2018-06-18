@@ -4,11 +4,15 @@
 3. Any blocks
 
 6/15/18- Weekend to do list:
--front end code
-  -Form page
-  -Query page
-  -Login page
--Style Guide
+- Change <hr> color on problem form fields
+- remove age incrementer
+- style error messages
+- race checklist typography
+- checkbox border white
+- age field label shrinks
+- problem radio buttons not turning red
+- style header typography
+- example closer to problem madlib
 
 ```
 

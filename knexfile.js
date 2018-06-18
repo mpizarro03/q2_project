@@ -2,9 +2,12 @@
 module.exports = {
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/xg'
+    connection: 'postgres://localhost:3000/xg'
   },
-  test: {},
+  test: {
+    client: 'pg',
+    connection: 'postgres://localhost:3000/xg'
+  },
   production: {
     client: 'pg',
     connection: process.env.DATABASE_URL

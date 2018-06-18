@@ -1,5 +1,4 @@
-//where is variable that requires problems?
-const data = knex('problems')
+const knex = require('../knex.js')
 
 function create(body) {
   const noun = body.noun
@@ -9,27 +8,29 @@ function create(body) {
   const lat = body.lat
   const long = body.long
   const age = body.age
-  const gender_id = body.gender_id
-  const type_id = body.type_id
-  const race_id = body.race_id
+  const gender = body.gender
+  const topic = body.topic
+  const race = body.race
   const problem = {
-    "noun": noun,
-    "action": action,
-    "reason": reason,
-    "story": story,
-    "lat": lat,
-    "long": long,
-    "age": age,
-    "gender_id": gender_id,
-    "type_id": type_id,
-    "race_id": race_id
+    noun: noun,
+    action: action,
+    reason: reason,
+    story: story,
+    lat: lat,
+    long: long,
+    age: age,
+    gender_id: gender,
+    type: topic,
+    race: race
   }
-  knex('problems')
+  console.log("body:", body)
+  console.log("problem:", problem)
+  return knex('problems')
   .insert(problem)
 }
 
 function getAll() {
-  return data
+  return "nothing"
 }
 
 function login(){

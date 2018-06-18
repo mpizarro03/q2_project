@@ -100,14 +100,14 @@ $(document).ready(function(){
 
 
     const formData = {
-      age: $('#age').val(),
-      gender: genderData,
-      race: raceData,
-      topic: topicData,
-      noun: $('#noun').val(),
-      action: $('#action').val(),
-      reason: $('#reason').val(),
-      story: $('#story').val(),
+      "age": $('#age').val(),
+      "gender": genderData,
+      "race": raceData,
+      "topic": topicData,
+      "noun": $('#noun').val(),
+      "action": $('#action').val(),
+      "reason": $('#reason').val(),
+      "story": $('#story').val(),
 
     }
     console.log(formData)

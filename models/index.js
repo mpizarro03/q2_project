@@ -19,14 +19,12 @@ function create(body) {
     lat: lat,
     long: long,
     age: age,
-    gender_id: gender,
-    type: topic,
-    race: race
+    gender_id: 1,
+    type_id: 1,
+    race_id: 1
   }
-  console.log("body:", body)
-  console.log("problem:", problem)
   return knex('problems')
-  .insert(problem)
+    .insert(problem)
 }
 
 function getAll() {

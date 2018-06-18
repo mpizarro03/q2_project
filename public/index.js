@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   const otherTopic =
-    `<div class="input-field col s6">
+    `<div class="input-field col s12 m8 l6">
       <input placeholder="Other topic" id="type" type="text" class="validate">
     </div>`
 

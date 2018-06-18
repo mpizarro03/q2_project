@@ -32,6 +32,74 @@
             <h2>Wouldn’t it be great if <span class="highlight">Whole Foods</span><br>would<span class="highlight"> start using recyclable materials</span><br>so that<span class="highlight"> we wouldn’t waste so much plastic.</span></h2>
           </div>
           <div class="row">
+            <h2 class="section">About me...</h2>
+            <div class="input-field col s12 m8 l6">
+              <label>Age</label>
+              <input type="number" class="validate" max="150" maxlength="3">
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m8 l6">
+              <select>
+                <option value=""disabled selected>Choose one</option>
+                <option value="1">Gender Non Conforming</option>
+                <option value="2">Transgender Woman</option>
+                <option value="3">Transgender Man</option>
+                <option value="4">Female</option>
+                <option value="5">Male</option>
+                <option value="6">Other</option>
+                <option value="7">Prefer not to say</option>
+              </select>
+              <label>Gender Identity</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- <h6>Race: (select all that apply)</h6> -->
+            <label id="race" class="row">Race (Select all that apply)</label>
+            <div class="input-field col s12 m8 l6">
+              <p>
+                <label>
+                  <input type="checkbox"/>
+                  <span>Native American or Alaskan Native</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox"/>
+                  <span>Asian</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox"/>
+                  <span>Black or African American</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox"/>
+                  <span>Hispanic or Latino</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox"/>
+                  <span>Native Hawaiian or Other Pacific Islander</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox"/>
+                  <span>White</span>
+                </label>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <button class="btn waves-effect waves-light" id="location" name="location">Location</button>
+          </div>
+          <div class="row">
             <div class="row section">
               <h2>My topic is related to...</h2>
               <div id="topic" class="input-field col s12 m8 l6">
@@ -87,86 +155,16 @@
             </div>
           </div>
           <div class="row">
-            <h2>About me...</h2>
-            <div class="input-field col s3">
-              <input type="number" class="validate" max="150" maxlength="3">
-              <label for="age">Age</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 m8 l6">
-              <select>
-                <option value=""disabled selected>Choose one</option>
-                <option value="1">Gender Non Conforming</option>
-                <option value="2">Transgender Woman</option>
-                <option value="3">Transgender Man</option>
-                <option value="4">Female</option>
-                <option value="5">Male</option>
-                <option value="6">Other</option>
-                <option value="7">Prefer not to say</option>
-              </select>
-              <label>Gender Identity</label>
-            </div>
-          </div>
-
-          <div class="row">
-            <!-- <h6>Race: (select all that apply)</h6> -->
-            <label class="row">Race (Select all that apply)</label>
-            <div class="input-field col s12 m8 l6">
-              <p>
-                <label>
-                  <input type="checkbox"/>
-                  <span>Native American or Alaskan Native</span>
-                </label>
-              </p>
-              <p>
-                <label>
-                  <input type="checkbox"/>
-                  <span>Asian</span>
-                </label>
-              </p>
-              <p>
-                <label>
-                  <input type="checkbox"/>
-                  <span>Black or African American</span>
-                </label>
-              </p>
-              <p>
-                <label>
-                  <input type="checkbox"/>
-                  <span>Hispanic or Latino</span>
-                </label>
-              </p>
-              <p>
-                <label>
-                  <input type="checkbox"/>
-                  <span>Native Hawaiian or Other Pacific Islander</span>
-                </label>
-              </p>
-              <p>
-                <label>
-                  <input type="checkbox"/>
-                  <span>White</span>
-                </label>
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <button class="btn waves-effect waves-light" id="location" name="location">Location</button>
-          </div>
-          <!-- <div class="row">
-            <a href="#">Location</a>
-          </div> -->
-          <div class="row section">
+            <h2>Clever copy...</h2>
             <p>
               <label>
-                <input class="viewpoint1" name="group2" type="radio" checked/>
+                <input class="viewpoint1" name="group2" type="radio"/>
                 <span>I want something to happen...</span>
               </label>
             </p>
             <p>
               <label>
-                <input class="viewpoint2" name="group2" type="radio" checked/>
+                <input class="viewpoint2" name="group2" type="radio"/>
                 <span>I want something to stop...</span>
               </label>
             </p>

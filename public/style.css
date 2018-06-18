@@ -18,19 +18,30 @@ body {
     font-weight: 600;
   }
 
-  label {
-    color: white
+  #race {
+    margin-left: 10px
   }
-
 
 /* Form field labels */
 
-  .input-field>label {
+  label {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 22px
+    font-size: 16px;
     color: white
   }
 
+  .input-field>label {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+    top: -30px
+  }
+
+/* Text inputs */
+
+input[type=number]:not(.browser-default) {
+  border-bottom: 2px solid white
+}
 
 /* Radio field inputs */
 
@@ -75,17 +86,32 @@ body {
     border: 2px solid white
   }
 
+  [type="checkbox"].filled-in:checked+span:not(.lever):after {
+    border: 2px solid red;
+    background-color: red
+  }
+
+/* Dropdowns */
+
+  .select-wrapper input.select-dropdown {
+    border-bottom: 2px solid white
+  }
+
 /* Buttons: Location, Submit */
 
   .btn, .btn-large, .btn-small {
-    background-color: #EE1B1F;
-    border-radius: 1px;
-    width: 120px
+    background-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    width: 140px
   }
 
   .btn:hover, .btn-large:hover, .btn-small:hover {
-    background-color: black;
+    background-color: #EE1B1F;
     border-style: solid;
-    border-width: 1px;
-    border-color: white
+    border-width: 2px;
+    border-color: #EE1B1F;
+    border-radius: 1px;
+    width: 140px
   }

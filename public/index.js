@@ -45,6 +45,11 @@ $(document).ready(function(){
       </div>
     </div>`
 
+  $('#other').one('click', function(){
+    $('#topic').append(otherTopic)
+    ev.preventDefault();
+  })
+
   function success(position) {
     let latitude  = position.coords.latitude;
     let longitude = position.coords.longitude;
@@ -65,14 +70,11 @@ $(document).ready(function(){
     navigator.geolocation.getCurrentPosition(success, error);
   }
 
-  $('#other').one('click', function(){
-    $('#topic').append(otherTopic)
-    ev.preventDefault();
-  })
-
   $('#location').on('click', function(){
     geoFindMe()
   })
+
+//State dependent madlib:
 
   $('.viewpoint1').on('click', function(){
     $('#madlib').empty()
@@ -85,9 +87,6 @@ $(document).ready(function(){
     $('#madlib').append(stop)
     ev.preventDefault();
   })
-
-  // var instance = M.FormSelect.getInstance(elem)
-  // instance.getSelectedValues()
 
   // materialize for dropdown menu
   $('select').formSelect()

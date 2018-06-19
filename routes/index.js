@@ -4,6 +4,7 @@ const router = express.Router()
 const ctrl = require('../controllers/index.js')
 
 //all routes
+router.get('/team', ctrl.getAll )
 router.post('/', ctrl.create)
 router.post('/login', ctrl.login)
 router.post('/db', ctrl.query)

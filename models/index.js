@@ -27,6 +27,10 @@ function create(body) {
     .insert(problem)
 }
 
+function getAll() {
+  return knex('problems')
+}
+
 function login(){
   const email = body.email
   const password = body.password

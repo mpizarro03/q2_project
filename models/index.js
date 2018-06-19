@@ -41,7 +41,7 @@ function login(){
 
 }
 
-function query(){
+function query(body){
   const type_id = body.type_id
   const age = body.age
   const gender_id = body.gender_id

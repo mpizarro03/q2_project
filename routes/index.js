@@ -4,10 +4,12 @@ const router = express.Router()
 const ctrl = require('../controllers/index.js')
 
 //all routes
-router.get('/team', ctrl.getAll)
 router.post('/', ctrl.create)
 router.post('/login', ctrl.login)
-router.post('/db', ctrl.query)
+router.get('/team', ctrl.getAll)
+router.post('/team', ctrl.query)
+
+
 
 //Stretch goals:
 //route for getting team members user info(admin page)

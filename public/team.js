@@ -26,10 +26,41 @@ $('form').on('submit', function(event) {
   let genderData = $('.gender:checked').val()
   let ageData = $('.age:checked').val()
 
+  let query = {
+    "topicData": null,
+    "raceData": null,
+    "genderData": null,
+    "ageData": null,
+  }
+  function check() {
+    if(topicData) {
+      query.topicData = topicData
+    }
+    if(raceData) {
+      query.raceData = raceData
+    }
+    if(genderData) {
+      query.genderData = genderData
+    }
+    if(ageData) {
+      query.ageData = ageData
+    }
+    return
+  }
+
+  check()
+
+  
+
+  $.post('/team', query)
+     .then((result) => {
+       console.log("result:", result)
+     })
+
 })
 
-  // $.get('localhost:3000/team', function(data){
-  //   alert("data loaded:" + data);
-  // });
+  $.get('/team', function(data){
+
+  });
 
 });

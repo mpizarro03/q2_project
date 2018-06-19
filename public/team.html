@@ -10,6 +10,7 @@
     <!--typekit-->
     <link rel="stylesheet" href="https://use.typekit.net/vpe6yui.css">
 
+    <link rel="stylesheet" href="queryStyle.css">
     <!--mobile optimization-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
@@ -20,10 +21,15 @@
   <body>
     <div class="container">
       <div class="row">
-        <form id="form" class="col s12 m10 l8">
-          <h2 class="row">Problems matching your search:</h2>
+        <header class="col l12 center">
+          <img src="../strategy/Logo.png" alt="Xperience Garage">
+        </header>
+      </div>
+      <div class="row">
+        <form id="form" class="col s12 m10 l12">
           <div class="row">
-            <div class="input-field col s12 m8 l6">
+            <h5>Problems you want to search:</h5>
+            <div class="input-field col l3">
               <select multiple>
                 <option value="" disabled selected></option>
                 <option value="1">Environment/Nature</option>
@@ -34,13 +40,21 @@
                 <option value="6">Family/Personal</option>
                 <option value="7">Education/Schools</option>
               </select>
-              <label>My topic is related to...</label>
+              <label>Problem type:</label>
             </div>
-          </div>
-
-
-          <div class="row">
-            <div class="input-field col s12 m8 l6">
+            <div class="input-field col l3">
+              <select multiple>
+                <option value="" disabled selected></option>
+                <option value="1"> 15 - 24 </option>
+                <option value="2"> 25 - 34</option>
+                <option value="3"> 35 - 44 </option>
+                <option value="4"> 45 - 54</option>
+                <option value="5"> 55 - 64</option>
+                <option value="6"> 65 + </option>
+              </select>
+              <label>Age Range:</label>
+            </div>
+            <div class="input-field col l3">
               <select multiple>
                 <option value="" disabled selected></option>
                 <option value="1">Gender Non Conforming</option>
@@ -51,11 +65,9 @@
                 <option value="6">Other</option>
                 <option value="7">Prefer not to say</option>
               </select>
-              <label>Gender Identity</label>
+              <label>Gender:</label>
             </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12 m8 l6">
+            <div class="input-field col l3">
               <select multiple>
                 <option value="" disabled selected></option>
                 <option value="1">Latino/Hispanic</option>
@@ -68,16 +80,60 @@
                 <option value="8">Mixed</option>
                 <option value="8">Other</option>
               </select>
-              <label>Ethnicity (Choose all that apply)</label>
+              <label>Race:</label>
+            </div>
+            <div class="row col l12 center">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
             </div>
           </div>
-          <div class="row">
-            <a href="#">Location</a>
+          <div class="row col l12">
+            <h5 id="search">Problems matching your search:</h5>
+            <table>
+              <tr>
+                <th>Id</th>
+                <th>Noun</th>
+                <th>Action</th>
+                <th>Reason</th>
+                <th>Story</th>
+                <th>Lat</th>
+                <th>Long</th>
+                <th>Age</th>
+                <th>gender_id</th>
+                <th>type_id</th>
+                <th>race_id</th>
+              </tr>
+              <tr>
+                <th>1</th>
+                <th>Galvanize</th>
+                <th>start having kegs at 3pm</th>
+                <th>it breaks up the day</th>
+                <th>I really like beer</th>
+                <th>00.00</th>
+                <th>01.01</th>
+                <th>32</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <th>Emilia</th>
+                <th>washing dishes</th>
+                <th>I don't have to do it</th>
+                <th>I really don't like washing dishes</th>
+                <th>00.01</th>
+                <th>02.02</th>
+                <th>32</th>
+                <th>1</th>
+                <th>3</th>
+                <th>2</th>
+              </tr>
+            </table>
           </div>
-          <div class="row">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-            </button>
-          </div>
+
+
+
+
         </form>
       </div>
     </div>

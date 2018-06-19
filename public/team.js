@@ -45,6 +45,69 @@ $('form').on('submit', function(event) {
     if(ageData) {
       query.ageData = ageData
     }
+    if(query.genderData === "Gender Non Conforming"){
+      query.genderData = 1
+    }
+    if(query.genderData === "Transgender Woman"){
+      query.genderData = 2
+    }
+    if(query.genderData === "Transgender Man"){
+      query.genderData = 3
+    }
+    if(query.genderData === "Female"){
+      query.genderData = 4
+    }
+    if(query.genderData === "Male"){
+      query.genderData = 5
+    }
+    if(query.genderData === "Other"){
+      query.genderData = 6
+    }
+    if(query.genderData === "Prefer not to say"){
+      query.genderData = 7
+    }
+    if(query.topicData === "Environment/Nature"){
+      query.topicData = 1
+    }
+    if(query.topicData === "Community/Neighborhood"){
+      query.topicData = 2
+    }
+    if(query.topicData === "Politics/Human Rights/Greater Good"){
+      query.topicData = 3
+    }
+    if(query.topicData === "Company/Organization"){
+      query.topicData = 4
+    }
+    if(query.topicData === "Products/Services"){
+      query.topicData = 5
+    }
+    if(query.topicData === "Family/Personal"){
+      query.topicData = 6
+    }
+    if(query.topicData === "Education/Schools"){
+      query.topicData = 7
+    }
+    if(query.topicData === "Other"){
+      query.topicData = 8
+    }
+    if(query.raceData === "Native American or Alaskan Native"){
+      query.raceData = 1
+    }
+    if(query.raceData === "Asian"){
+      query.raceData = 2
+    }
+    if(query.raceData === "Black or African American"){
+      query.raceData = 3
+    }
+    if(query.raceData === "Hispanic or Latino"){
+      query.raceData = 4
+    }
+    if(query.raceData === "Native Hawaiian or Other Pacific Islander"){
+      query.raceData = 5
+    }
+    if(query.raceData === "White"){
+      query.raceData = 6
+    }
     return
   }
 

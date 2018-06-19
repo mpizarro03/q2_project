@@ -4,20 +4,22 @@
 3. Any blocks
 
 6/15/18- Weekend to do list:
+
 - Styling:
   - Change <hr> color on problem form fields
   - style error messages
   - age field label shrinks
   - example closer to problem madlib
 
-- html
-  - query page
-  - login page
-
 - backend
-  - logic in server.js for 'other' topic option
-  - get all route
-  - query page post route
+  - routes
+    - logic in server.js for 'other' topic option
+    - get all route
+    - query page post route
+    - post routes to get logins
+
+  - stretch
+    - bcrypt - auth
 
 
 ```

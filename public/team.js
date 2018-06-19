@@ -28,8 +28,8 @@ $('form').on('submit', function(event) {
 
 })
 
-  // $.get('localhost:3000/team', function(data){
-  //   alert("data loaded:" + data);
-  // });
+  $.get('/team', function(data){
+    console.log(data);
+  });
 
 });

@@ -128,9 +128,12 @@ $(document).ready(function(){
     }
 
     function check(){
-      if(!$('#lat').val() && !$('#long').val()){
+      if(!latitude && !longitude){
         return
       }
+      // if(!$('#lat').val() && !$('#long').val()){
+      //   return
+      // }
       else {
         console.log('heres a lat')
         formData.lat = latitude

@@ -142,7 +142,7 @@ $(document).ready(function(){
     check()
 
     console.log(formData)
-    $.post('http://localhost:3000', formData)
+    $.post('/', formData)
        .then((result) => {
          console.log(result)
        })

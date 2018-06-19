@@ -50,7 +50,7 @@ $('form').on('submit', function(event) {
 
   check()
 
-  
+
 
   $.post('/team', query)
      .then((result) => {

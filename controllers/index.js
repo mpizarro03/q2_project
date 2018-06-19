@@ -1,10 +1,5 @@
 const model = require('../models/index.js')
 
-function getAll(req, res, next){
-  model.getAll()
-  res.status(200).json({data})
-}
-
 function create(req, res, next){
   model.create(req.body)
   .then(res.status(201))
@@ -20,4 +15,4 @@ function query(req, res, next){
   .then(res.status(200))
 }
 
-module.exports = {getAll, create, login,query}
+module.exports = { create, login, query }

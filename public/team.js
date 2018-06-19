@@ -108,6 +108,7 @@ $('form').on('submit', function(event) {
     if(query.raceData === "White"){
       query.raceData = 6
     }
+    console.log(ageData)
     return
   }
 

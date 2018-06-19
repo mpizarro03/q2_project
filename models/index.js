@@ -56,4 +56,4 @@ function query(){
   .where(search)
 }
 
-module.exports = { create, login, query }
+module.exports = { getAll, create, login, query }

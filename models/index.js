@@ -28,8 +28,9 @@ function create(body) {
 }
 
 function getAll() {
-  return "nothing"
+  return knex('problems')
 }
+
 
 function login(){
   const email = body.email

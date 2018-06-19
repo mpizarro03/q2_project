@@ -66,18 +66,17 @@ $(document).ready(function(){
 
     $('#latlong').append(latLong)
 
-    console.log('Latitude is ' + latitude + '° Longitude is ' + longitude + '°')
+    // console.log('Latitude is ' + latitude + '° Longitude is ' + longitude + '°')
   }
 
   function error() {
-    console.log("Unable to retrieve your location")
+    return "Location not working"
   }
 
   function geoFindMe() {
     if (!navigator.geolocation){
-            console.log("Geolocation is not supported by your browser")
-            return
-          }
+        return "Geolocation is not supported by your browser"
+    }
     navigator.geolocation.getCurrentPosition(success, error);
   }
 
@@ -144,7 +143,6 @@ $(document).ready(function(){
 
     check()
 
-    console.log(formData)
     $.post('/', formData)
        .then((result) => {
          console.log(result)

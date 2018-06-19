@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   const otherTopic =
     `<div class="input-field col s12 m8 l6">
-      <input placeholder="Other topic" id="type" type="text" class="validate">
+      <input placeholder="Other topic" id="type" type="text">
     </div>`
 
   const start =
@@ -91,12 +91,14 @@ $(document).ready(function(){
   $('.viewpoint1').on('click', function(){
     $('#madlib').empty()
     $('#madlib').append(start)
+    this.attr('checked', 'checked')
     event.preventDefault();
   })
 
   $('.viewpoint2').on('click', function(){
     $('#madlib').empty()
     $('#madlib').append(stop)
+    this.attr('checked', 'checked')
     event.preventDefault();
   })
 

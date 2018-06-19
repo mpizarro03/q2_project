@@ -34,17 +34,17 @@
 
       <!--Form-->
       <div class="row">
-        <form id="form" name="form" class="col s12 m10 l8">
+        <form id="form" name="form" class="col s12 m10 l10">
           <div class="row">
             <!--About me section-->
             <h2 class="section">About me...</h2>
-            <div class="input-field col s12 m8 l6">
+            <div class="input-field col s12 m8 l8">
               <label>Age</label>
-              <input id="age" name="age" type="number" class="validate" max="150" maxlength="3">
+              <input id="age" name="age" type="number" max="150" maxlength="3" placeholder="Enter your age in numbers">
             </div>
           </div>
           <div class="row">
-            <div class="input-field col s12 m8 l6">
+            <div class="input-field col s12 m8 l8">
               <select id="gender">
                 <option class="gender" value=""disabled selected>Choose one</option>
                 <option class="gender" value="Gender Non Conforming">Gender Non Conforming</option>
@@ -59,8 +59,8 @@
             </div>
           </div>
           <div class="row">
-            <label id="race" class="row">Race (Select all that apply)</label>
-            <div id="raceOption" class="input-field col s12 m8 l6">
+            <label id="indent1" class="row">Race (Select all that apply)</label>
+            <div id="raceOption" class="input-field col s12 m8 l8">
               <p>
                 <label>
                   <input class="race" type="checkbox" name="race" value="Native American or Alaskan Native">
@@ -103,11 +103,12 @@
 
           <!--Problem section-->
           <div class="row section">
-            <h2>My topic is related to...</h2>
-            <div id="topic" class="input-field col s12 m8 l6">
+            <h2>What I want to share:</h2>
+            <label id="indent2" class="row">My topic is related to...</label>
+            <div id="topic" class="input-field col s12 m8 l8">
               <p>
                 <label>
-                  <input class="topic" value="Environment/Nature" name="group1" type="radio"/>
+                  <input class="topic" value="Environment/Nature" name="group1" type="radio" checked/>
                   <span>Environment/Nature</span><br>
                 </label>
 
@@ -149,17 +150,17 @@
             </div>
           </div>
           <div class="row">
-            <h2>Clever copy...</h2>
+            <label>I want something to...</label>
             <p>
               <label>
                 <input class="viewpoint1" name="group2" type="radio"/>
-                <span>I want something to happen...</span>
+                <span>happen.</span>
               </label>
             </p>
             <p>
               <label>
                 <input class="viewpoint2" name="group2" type="radio"/>
-                <span>I want something to stop...</span>
+                <span>stop.</span>
               </label>
             </p>
           </div>

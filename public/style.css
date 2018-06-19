@@ -2,6 +2,10 @@ body {
   background-color: black
 }
 
+.container {
+  width: 65%
+}
+
 /* FONTS */
 
   @import url("https://use.typekit.net/vpe6yui.css");
@@ -18,7 +22,11 @@ body {
     font-weight: 600;
   }
 
-  #race {
+  #indent1 {
+    margin-left: 10px
+  }
+
+  #indent2 {
     margin-left: 10px
   }
 
@@ -33,8 +41,7 @@ body {
   .input-field>label {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
-    color: white;
-    top: -30px
+    color: white
   }
 
 /* Text inputs */
@@ -42,6 +49,12 @@ body {
 input[type=number]:not(.browser-default) {
   border-bottom: 2px solid white;
   color: white
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 textarea.materialize-textarea {
@@ -52,7 +65,7 @@ textarea.materialize-textarea {
 
   [type="radio"]+span {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 22px;
+    font-size: 16px;
     color: white
   }
 
@@ -62,10 +75,14 @@ textarea.materialize-textarea {
     border-color: white
   }
 
-   [type="radio"]:checked+span:before, [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+  [type="radio"]:checked+span:before, [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
      color: white;
      background-color: #EE1B1F;
      border-color: #EE1B1F
+   }
+
+  [type="radio"]:not(:checked)+span, [type="radio"]:checked+span {
+    font-size: 16px;
    }
 
 
@@ -73,7 +90,7 @@ textarea.materialize-textarea {
 
   [type="checkbox"]+span:not(.lever){
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 22px;
+    font-size: 16px;
     color: white
   }
 
@@ -84,17 +101,20 @@ textarea.materialize-textarea {
   }
 
   [type="checkbox"]+span:not(.lever):before, [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
-    border: 2px solid white
-    color: white;
+    border: 2px solid white;
+    font-size: 16px;
+    color: white
   }
 
   [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
-    border: 2px solid white
+    border: 2px solid white;
+    font-size: 16px;
   }
 
   [type="checkbox"].filled-in:checked+span:not(.lever):after {
     border: 2px solid red;
-    background-color: red
+    background-color: red;
+    font-size: 16px
   }
 
 /* Dropdowns */

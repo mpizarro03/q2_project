@@ -3,21 +3,6 @@ $(document).ready(function(){
 
   const test = "test"
 
-  const dataRow =
-  `<tr>
-      <th>${test}</th>
-      <th>${test}</th>
-      <th>${test}</th>
-      <th>${test}</th>
-      <th>${test}</th>
-      <th>${test}</th>
-      <th>${test}</th>
-      <th>${test}</th>
-      <th>${test}</th>
-      <th>${test}</th>
-      <th>${test}</th>
-    </tr>`
-
 //form submit listener
 $('form').on('submit', function(event) {
   event.preventDefault()
@@ -120,8 +105,22 @@ $('form').on('submit', function(event) {
 
   $.post('/team', query)
      .then((result) => {
-       console.log("result:", result)
-     })
+       // for(i = 0; i < result.length; i++){
+       //   let dataRow =
+       //   `<tr>
+       //       <th>${result[i].id}</th>
+       //       <th>${result[i].age}</th>
+       //       <th>${result[i].gender_id}</th>
+       //       <th>${result[i].race_id}</th>
+       //       <th>${result[i].type_id}</th>
+       //       <th>${result[i].noun}</th>
+       //       <th>${result[i].action}</th>
+       //       <th>${result[i].reason}</th>
+       //       <th>${result[i].story}</th>
+       //     </tr>`
+       //    $.('table').append(dataRow)
+       // }
+     });
 
 })
 

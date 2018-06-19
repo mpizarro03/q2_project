@@ -44,6 +44,10 @@ input[type=number]:not(.browser-default) {
   color: white
 }
 
+textarea.materialize-textarea {
+  color: white
+}
+
 /* Radio field inputs */
 
   [type="radio"]+span {
@@ -96,7 +100,8 @@ input[type=number]:not(.browser-default) {
 /* Dropdowns */
 
   .select-wrapper input.select-dropdown {
-    border-bottom: 2px solid white
+    border-bottom: 2px solid white;
+    color: white
   }
 
 /* Buttons: Location, Submit */

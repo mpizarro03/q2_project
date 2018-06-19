@@ -53,9 +53,20 @@ $(document).ready(function(){
   function success(position) {
     let latitude  = position.coords.latitude;
     let longitude = position.coords.longitude;
+
+    const latLong =
+      `<div class="row">
+        <label for="lat">Latitude</label>
+        <textarea id="lat" class="materialize-textarea">${latitude}</textarea>
+      </div>
+      <div class="row">
+        <label for="long">Longitude</label>
+        <textarea id="long" class="materialize-textarea">${longitude}</textarea>
+      </div>`
+
+    $('#latlong').append(latLong)
+
     console.log('Latitude is ' + latitude + '° Longitude is ' + longitude + '°')
-                  // var img = new Image();
-                  // img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
   }
 
   function error() {
@@ -72,6 +83,7 @@ $(document).ready(function(){
 
   $('#location').on('click', function(){
     geoFindMe()
+    event.preventDefault();
   })
 
 //State dependent madlib:
@@ -97,16 +109,36 @@ $(document).ready(function(){
     let raceData = $('.race:checked').val()
     let genderData = $('.gender:checked').val()
     let topicData = $('.topic:checked').val()
+    let latitude = $('#lat').val()
+    let longitude = $('#long').val()
+
     const formData = {
       "age": $('#age').val(),
       "gender": genderData,
       "race": raceData,
+      "lat": null,
+      "long": null,
       "topic": topicData,
       "noun": $('#noun').val(),
       "action": $('#action').val(),
       "reason": $('#reason').val(),
       "story": $('#story').val(),
     }
+
+    function check(){
+      if(!$('#lat').val() && !$('#long').val()){
+        return
+      }
+      else {
+        console.log('heres a lat')
+        formData.lat = latitude
+        formData.long = longitude
+      }
+      return
+    }
+
+    check()
+
     console.log(formData)
     $.post('http://localhost:3000', formData)
        .then((result) => {

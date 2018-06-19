@@ -1,6 +1,9 @@
 .container {
   width: 95%
 }
+.container-2 {
+  width: 45%
+}
 /* FONTS */
 
   @import url("https://use.typekit.net/vpe6yui.css");

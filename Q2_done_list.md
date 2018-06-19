@@ -6,13 +6,8 @@
 6/15/18- Weekend to do list:
 - Styling:
   - Change <hr> color on problem form fields
-  - remove age incrementer
   - style error messages
-  - race checklist typography
-  - checkbox border white
   - age field label shrinks
-  - problem radio buttons not turning red
-  - style header typography
   - example closer to problem madlib
 
 - html
@@ -20,6 +15,7 @@
   - login page
 
 - backend
+  - logic in server.js for 'other' topic option
   - get all route
   - query page post route
 

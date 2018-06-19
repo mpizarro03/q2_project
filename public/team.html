@@ -32,50 +32,50 @@
             <div class="input-field col l3">
               <select multiple>
                 <option value="" disabled selected></option>
-                <option value="1">Environment/Nature</option>
-                <option value="2">Community/Neighborhood</option>
-                <option value="3">Politics/Human Rights/Greater Good</option>
-                <option value="4">Company/Organization</option>
-                <option value="5">Products/Services</option>
-                <option value="6">Family/Personal</option>
-                <option value="7">Education/Schools</option>
-                <option value="8">Other</option>
+                <option class="topic" value="1">Environment/Nature</option>
+                <option class="topic" value="2">Community/Neighborhood</option>
+                <option class="topic" value="3">Politics/Human Rights/Greater Good</option>
+                <option class="topic" value="4">Company/Organization</option>
+                <option class="topic" value="5">Products/Services</option>
+                <option class="topic" value="6">Family/Personal</option>
+                <option class="topic" value="7">Education/Schools</option>
+                <option class="topic" value="8">Other</option>
               </select>
               <label>Problem type:</label>
             </div>
             <div class="input-field col l3">
               <select multiple>
                 <option value="" disabled selected></option>
-                <option value="1"> 15 - 24 </option>
-                <option value="2"> 25 - 34</option>
-                <option value="3"> 35 - 44 </option>
-                <option value="4"> 45 - 54</option>
-                <option value="5"> 55 - 64</option>
-                <option value="6"> 65 + </option>
+                <option class="age" value="1"> 15 - 24 </option>
+                <option class="age" value="2"> 25 - 34</option>
+                <option class="age" value="3"> 35 - 44 </option>
+                <option class="age" value="4"> 45 - 54</option>
+                <option class="age" value="5"> 55 - 64</option>
+                <option class="age" value="6"> 65 + </option>
               </select>
               <label>Age Range:</label>
             </div>
             <div class="input-field col l3">
               <select multiple>
                 <option value="" disabled selected></option>
-                <option value="1">Gender Non Conforming</option>
-                <option value="2">Transgender Woman</option>
-                <option value="3">Transgender Man</option>
-                <option value="4">Female</option>
-                <option value="5">Male</option>
-                <option value="6">Other</option>
-                <option value="7">Prefer not to say</option>
+                <option class="gender" value="1">Gender Non Conforming</option>
+                <option class="gender" value="2">Transgender Woman</option>
+                <option class="gender" value="3">Transgender Man</option>
+                <option class="gender" value="4">Female</option>
+                <option class="gender" value="5">Male</option>
+                <option class="gender" value="6">Other</option>
+                <option class="gender" value="7">Prefer not to say</option>
               </select>
               <label>Gender:</label>
             </div>
             <div class="input-field col l3">
               <select multiple>
-                <option value="" disabled selected></option>
-                <option value="1">Native American or Alaskan Native</option>
-                <option value="2">Asian</option>
-                <option value="3">Black or African American</option>
-                <option value="4">Hispanic or Latino</option>
-                <option value="5">Native Hawaiian or Other Pacific Islanderd</option>
+                <option class="race" value="" disabled selected></option>
+                <option class="race" value="1">Native American or Alaskan Native</option>
+                <option class="race" value="2">Asian</option>
+                <option class="race" value="3">Black or African American</option>
+                <option class="race" value="4">Hispanic or Latino</option>
+                <option class="race" value="5">Native Hawaiian or Other Pacific Islanderd</option>
               </select>
               <label>Race:</label>
             </div>
@@ -88,42 +88,36 @@
             <table id="table">
               <tr>
                 <th>Id</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Race</th>
+                <th>Type</th>
                 <th>Noun</th>
                 <th>Action</th>
                 <th>Reason</th>
                 <th>Story</th>
-                <th>Lat</th>
-                <th>Long</th>
-                <th>Age</th>
-                <th>gender_id</th>
-                <th>type_id</th>
-                <th>race_id</th>
               </tr>
               <tr>
+                <th>1</th>
+                <th>32</th>
+                <th>1</th>
+                <th>1</th>
                 <th>1</th>
                 <th>Galvanize</th>
                 <th>start having kegs at 3pm</th>
                 <th>it breaks up the day</th>
                 <th>Lorem ipsizzle dolor sit amizzle, consectetuer adipiscing dang. Nullam pizzle mah nizzle, i'm in the shizzle volutpizzle, you son of a bizzle quizzle, break yo neck, yall vizzle, dope. Ma nizzle eget tortizzle. Shit yo mamma. Own yo' izzle fizzle you son of a bizzle turpis gizzle my shizz. Maurizzle pellentesque nibh mofo funky fresh. Stuff izzle tortor. Pellentesque crunk rhoncizzle fizzle. In hac mah nizzle platea dictumst. Donec dapibizzle. Curabitur tellizzle bow wow wow, pretizzle rizzle, mattizzle izzle, eleifend vitae, mammasay mammasa mamma oo sa. That's the shizzle suscipizzle. Integizzle sempizzle bizzle shit.</th>
-                <th>00.00</th>
-                <th>01.01</th>
-                <th>32</th>
-                <th>1</th>
-                <th>1</th>
-                <th>1</th>
               </tr>
               <tr>
+                <th>2</th>
+                <th>32</th>
+                <th>1</th>
+                <th>3</th>
                 <th>2</th>
                 <th>Emilia</th>
                 <th>washing dishes</th>
                 <th>I don't have to do it</th>
                 <th>Lorem ipsizzle dolor sit amizzle, consectetuer adipiscing dang. Nullam pizzle mah nizzle, i'm in the shizzle volutpizzle, you son of a bizzle quizzle, break yo neck, yall vizzle, dope. Ma nizzle eget tortizzle. Shit yo mamma. Own yo' izzle fizzle you son of a bizzle turpis gizzle my shizz. Maurizzle pellentesque nibh mofo funky fresh. Stuff izzle tortor. Pellentesque crunk rhoncizzle fizzle. In hac mah nizzle platea dictumst. Donec dapibizzle. Curabitur tellizzle bow wow wow, pretizzle rizzle, mattizzle izzle, eleifend vitae, mammasay mammasa mamma oo sa. That's the shizzle suscipizzle. Integizzle sempizzle bizzle shit.</th>
-                <th>00.01</th>
-                <th>02.02</th>
-                <th>32</th>
-                <th>1</th>
-                <th>3</th>
-                <th>2</th>
               </tr>
             </table>
           </div>
@@ -136,7 +130,7 @@
     </div>
 
     <!--jQuery-->
-    <script       src="https://code.jquery.com/jquery-3.3.1.min.js"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous">
     </script>

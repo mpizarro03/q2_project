@@ -31,7 +31,6 @@ function getAll() {
   return knex('problems')
 }
 
-
 function login(){
   const email = body.email
   const password = body.password
@@ -57,4 +56,4 @@ function query(){
   .where(search)
 }
 
-module.exports = {getAll,create,login,query}
+module.exports = { getAll, create, login, query }

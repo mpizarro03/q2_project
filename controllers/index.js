@@ -22,4 +22,4 @@ function query(req, res, next){
   .then(res.status(200))
 }
 
-module.exports = {getAll, create, login,query}
+module.exports = { getAll, create, login, query }

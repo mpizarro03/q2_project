@@ -25,12 +25,15 @@ $('form').on('submit', function(event) {
   let raceData = $('.race:checked').val()
   let genderData = $('.gender:checked').val()
   let ageData = $('.age:checked').val()
+  let ageArray = ageData.split(' - ')
+  let age = ageArray.map((ele)=> parseInt(ele))
 
   let query = {
     "topicData": null,
     "raceData": null,
     "genderData": null,
-    "ageData": null,
+    "ageMin": age[0],
+    "ageMax": age[1]
   }
   function check() {
     if(topicData) {
@@ -41,9 +44,6 @@ $('form').on('submit', function(event) {
     }
     if(genderData) {
       query.genderData = genderData
-    }
-    if(ageData) {
-      query.ageData = ageData
     }
     if(query.genderData === "Gender Non Conforming"){
       query.genderData = 1
@@ -108,6 +108,7 @@ $('form').on('submit', function(event) {
     if(query.raceData === "White"){
       query.raceData = 6
     }
+    console.log("this is query", query)
     return
   }
 

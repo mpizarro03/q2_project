@@ -25,17 +25,22 @@ $('form').on('submit', function(event) {
   let raceData = $('.race:checked').val()
   let genderData = $('.gender:checked').val()
   let ageData = $('.age:checked').val()
-  let ageArray = ageData.split(' - ')
-  let age = ageArray.map((ele)=> parseInt(ele))
 
   let query = {
     "topicData": null,
     "raceData": null,
     "genderData": null,
-    "ageMin": age[0],
-    "ageMax": age[1]
+    "ageMin": null,
+    "ageMax": null
   }
   function check() {
+    if(ageData){
+      let ageArray = ageData.split(' - ')
+      let age = ageArray.map((ele)=> parseInt(ele))
+      query.ageMin = age[0]
+      query.ageMax = age[1]
+    }
+
     if(topicData) {
       query.topicData = topicData
     }

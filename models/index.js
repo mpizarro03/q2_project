@@ -50,39 +50,38 @@ function query(body){
   const query = {}
 
   if(body.genderData){
-    query[gender_id] = body.genderData
+    query.gender_id = gender
   }
 
   if(body.raceData){
-    query[race_id] = body.raceData
+    query.race_id = race
   }
 
   if(body.topicData){
-    query[type_id] = body.topicData
+    query.type_id = type
   }
+
+  const ageQuery = {}
 
   if(body.ageMin){
-    query[age_min] = body.ageMin
-  }
-
-  if(!body.ageMin){
-    query[age_min] = 0
+    ageQuery.age_min = ageMin
   }
 
   if(body.ageMax){
-    query[age_max] = body.ageMax
+    ageQuery.age_max = ageMax
+  }
+
+  if(!body.ageMin){
+    ageQuery.age_min = 0
   }
 
   if(!body.ageMax){
-    query[age_max] = 150
+    ageQuery.age_max = 150
   }
 
   return knex('problems')
-    .where('gender_id', gender_id)
-    .where('race_id', race_id)
-    .where('type_id', type_id)
-    .whereBetween('age', [age_min, age_max])
-
+    .where(query)
+    .whereBetween('age', [ageQuery.age_min, ageQuery.age_max])
 }
 
 module.exports = { getAll, create, login, query }

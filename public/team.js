@@ -108,13 +108,10 @@ $('form').on('submit', function(event) {
     if(query.raceData === "White"){
       query.raceData = 6
     }
-    console.log("this is query", query)
     return
   }
 
   check()
-
-
 
   $.post('/team', query)
      .then((result) => {

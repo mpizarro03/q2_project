@@ -1,7 +1,7 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('types', table => {
     table.increments()
-    table.string('type', 40).notNullable()
+    table.string('type').notNullable()
   })
 };
 

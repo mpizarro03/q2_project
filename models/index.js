@@ -42,18 +42,47 @@ function login(){
 }
 
 function query(body){
-  const type_id = body.type_id
-  const age = body.age
-  const gender_id = body.gender_id
-  const race_id = body.race_id
-  const search = {
-    "type_id": type_id,
-    "age": age,
-    "gender_id": gender_id,
-    "race_id": race_id
+  const gender = body.genderData
+  const race = body.raceData
+  const type = body.topicData
+  const ageMin = body.ageMin
+  const ageMax = body.ageMax
+  const query = {}
+
+  if(body.genderData){
+    query[gender_id] = body.genderData
   }
-  knex('problems')
-  .where(search)
+
+  if(body.raceData){
+    query[race_id] = body.raceData
+  }
+
+  if(body.topicData){
+    query[type_id] = body.topicData
+  }
+
+  if(body.ageMin){
+    query[age_min] = body.ageMin
+  }
+
+  if(!body.ageMin){
+    query[age_min] = 0
+  }
+
+  if(body.ageMax){
+    query[age_max] = body.ageMax
+  }
+
+  if(!body.ageMax){
+    query[age_max] = 150
+  }
+
+  return knex('problems')
+    .where('gender_id', gender_id)
+    .where('race_id', race_id)
+    .where('type_id', type_id)
+    .whereBetween('age', [age_min, age_max])
+
 }
 
 module.exports = { getAll, create, login, query }

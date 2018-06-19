@@ -17,9 +17,13 @@ function login(req, res, next){
   model.login(req.body)
   res.status(200)
 }
+
 function query(req, res, next){
   model.query(req.body)
-  .then(res.status(200))
+  .then(results =>{
+    console.log(results)
+    res.status(200).send(results);
+  }).catch((err) => console.error(`Query unsuccessful ${err}`))
 }
 
 module.exports = { getAll, create, login, query }

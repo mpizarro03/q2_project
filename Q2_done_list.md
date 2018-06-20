@@ -1,29 +1,52 @@
-#Team Standup
-1. What did you finish yesterday
-2. What are you working on today
-3. Any blocks
+TODO:
 
-6/15/18- Weekend to do list:
+- HTML  
+  - privacy policy page
+  - link xperiencegarage.com to problem form
+  - make fields required
+  - REFACTOR: change select and dropdown values to DB ids
+  - reCAPTCHA
+  - return general location not lat and long (Success message Boulder, Colorado)
+  - move example lower, copy at top
+  - header with logo
 
 - Styling:
   - Change <hr> color on problem form fields
   - style error messages
   - age field label shrinks
   - example closer to problem madlib
+  - age field smaller
+  - answers in red, use Garamond
 
 - backend
   - routes
     - logic in server.js for 'other' topic option
-    - get all route
-    - query page post route
-    - post routes to get logins
+
   - query search page
     - need function to clear search
-    - can only select 1 from each from drop down
-    - selection to clear after "submit" is hit
+    - append column headers with submit
+    - can only search by other, logic for if not one of these, show it.
+    - full sentence for noun, action, reason
+    - error message on query page where there are no problems matching search
+    - shorthand for race, gender and problem type
 
-  - stretch
+- stretch
+  - user login
+    - post routes to get logins
     - bcrypt - auth
+    - reset password
+    - save favorites
+  - export to csv
+  - Full admin panel
+  - keyword search
+  - mark problems as shitty that we never want to see again
+
+- Presentation
+  - Inspire people to vent
+  - setting up the context 
+  - Start by sharing xperiencegarage.com (follow path through the website)
+  - trends in problems across demographics
+  - diversity, prism of perspectives
 
 
 

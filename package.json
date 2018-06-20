@@ -1,16 +1,16 @@
 {
   "name": "q2_project",
   "version": "1.0.0",
-  "description": "Q2 group project",
   "engines": {
     "node": "v9.9.0"
   },
-  "main": "server.js",
+  "description": "q2_project",
+  "main": "knex.js",
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node server.js",
     "knex": "knex",
     "heroku-postbuild": "knex migrate:rollback; knex migrate:latest; knex seed:run;",
-    "nodemon": "node server.js",
+    "nodemon": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,5 @@
     "express": "^4.16.3",
     "knex": "^0.14.6",
     "pg": "^7.4.3"
-  },
-  "devDependencies": {}
+  }
 }

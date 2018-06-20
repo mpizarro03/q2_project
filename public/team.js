@@ -1,9 +1,33 @@
 $(document).ready(function(){
   $('select').formSelect();
   const test = "test"
+
   //form submit listener
   $('form').on('submit', function(event) {
     event.preventDefault()
+    $('#thead').empty()
+    $('#tbody').empty()
+    $('#matches').empty()
+
+    let thead =
+      `<tr>
+        <th>Id</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Race</th>
+        <th>Type</th>
+        <th>Noun</th>
+        <th>Action</th>
+        <th>Reason</th>
+        <th>Story</th>
+      </tr>`
+
+    let matches = `<h5 id="search">Problems matching your search:</h5>`
+
+    $('#matches').append(matches)
+    $('#thead').append(thead)
+
+
     let topicData = $('.topic:checked').val()
     let topic = parseInt(topicData)
     let raceData = $('.race:checked').val()
@@ -41,14 +65,82 @@ $(document).ready(function(){
 
     $.post('/team', query)
     .then((result) => {
+      let gender = ''
+      let race = ''
+      let type = ''
+
       for(let i = 0; i < result.length; i++){
+      if(result[i].gender_id === 1){
+        gender = "Gender Non Conforming"
+      }
+      if(result[i].gender_id === 2){
+        gender = "Transgender Woman"
+      }
+      if(result[i].gender_id === 3){
+        gender = "Transgender Man"
+      }
+      if(result[i].gender_id === 4){
+        gender = "Female"
+      }
+      if(result[i].gender_id === 5){
+        gender = "Male"
+      }
+      if(result[i].gender_id === 6){
+        gender = "Other"
+      }
+      if(result[i].gender_id === 7){
+        gender = "Prefer not to say"
+      }
+      if(result[i].type_id === 1){
+        type = "Environment/Nature"
+      }
+      if(result[i].type_id === 2){
+        type = "Community/Neighborhood"
+      }
+      if(result[i].type_id === 3){
+        type = "Politics/Human Rights/Greater Good"
+      }
+      if(result[i].type_id === 4){
+        type = "Company/Organization"
+      }
+      if(result[i].type_id === 5){
+        type = "Products/Services"
+      }
+      if(result[i].type_id === 6){
+        type = "Family/Personal"
+      }
+      if(result[i].type_id === 7){
+        type = "Education/Schools"
+      }
+      if(result[i].type_id === 8){
+        type = "Other"
+      }
+      if(result[i].race_id === 1){
+        race = "Native American or Alaskan Native"
+      }
+      if(result[i].race_id === 2){
+        race = "Asian"
+      }
+      if(result[i].race_id === 3){
+        race = "Black or African American"
+      }
+      if(result[i].race_id === 4){
+        race = "Hispanic or Latino"
+      }
+      if(result[i].race_id === 5){
+        race = "Native Hawaiian or Other Pacific Islander"
+      }
+      if(result[i].race_id === 6){
+        race = "White"
+      }
+
         let dataRow =
           `<tr>
             <td>${result[i].id}</td>
             <td>${result[i].age}</td>
-            <td>${result[i].gender_id}</td>
-            <td>${result[i].race_id}</td>
-            <td>${result[i].type_id}</td>
+            <td>${gender}</td>
+            <td>${race}</td>
+            <td>${type}</td>
             <td>${result[i].noun}</td>
             <td>${result[i].action}</td>
             <td>${result[i].reason}</td>
@@ -62,6 +154,13 @@ $(document).ready(function(){
 
   $.get('/team', function(data){
 
+  })
+
+  $('#clear').on('click', function(event){
+    $('#matches').empty()
+    $('#thead').empty()
+    $('#tbody').empty()
+    event.preventDefault()
   })
 
 })

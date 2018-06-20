@@ -33,14 +33,14 @@
             <div class="input-field col l3">
               <select multiple>
                 <option value="" disabled selected></option>
-                <option class="topic" value="Environment/Nature">Environment/Nature</option>
-                <option class="topic" value="Community/Neighborhood">Community/Neighborhood</option>
-                <option class="topic" value="Politics/Human Rights/Greater Good">Politics/Human Rights/Greater Good</option>
-                <option class="topic" value="Company/Organization">Company/Organization</option>
-                <option class="topic" value="Products/Services">Products/Services</option>
-                <option class="topic" value="Family/Personal">Family/Personal</option>
-                <option class="topic" value="Education/Schools">Education/Schools</option>
-                <option class="topic" value="Other">Other</option>
+                <option class="topic" value="1">Environment/Nature</option>
+                <option class="topic" value="2">Community/Neighborhood</option>
+                <option class="topic" value="3">Politics/Human Rights/Greater Good</option>
+                <option class="topic" value="4">Company/Organization</option>
+                <option class="topic" value="5">Products/Services</option>
+                <option class="topic" value="6">Family/Personal</option>
+                <option class="topic" value="7">Education/Schools</option>
+                <option class="topic" value="8">Other</option>
               </select>
               <label>Problem type:</label>
             </div>
@@ -52,31 +52,31 @@
                 <option class="age" value="35 - 44"> 35 - 44 </option>
                 <option class="age" value="45 - 54"> 45 - 54</option>
                 <option class="age" value="55 - 64"> 55 - 64</option>
-                <option class="age" value="65 +"> 65 + </option>
+                <option class="age" value="65 - 150"> 65 + </option>
               </select>
               <label>Age Range:</label>
             </div>
             <div class="input-field col l3">
               <select multiple>
                 <option value="" disabled selected></option>
-                <option class="gender" value="Gender Non Conforming">Gender Non Conforming</option>
-                <option class="gender" value="Transgender Woman">Transgender Woman</option>
-                <option class="gender" value="Transgender Man">Transgender Man</option>
-                <option class="gender" value="Female">Female</option>
-                <option class="gender" value="Male">Male</option>
-                <option class="gender" value="Other">Other</option>
-                <option class="gender" value="Prefer not to say">Prefer not to say</option>
+                <option class="gender" value="1">Gender Non Conforming</option>
+                <option class="gender" value="2">Transgender Woman</option>
+                <option class="gender" value="3">Transgender Man</option>
+                <option class="gender" value="4">Female</option>
+                <option class="gender" value="5">Male</option>
+                <option class="gender" value="6">Other</option>
+                <option class="gender" value="7">Prefer not to say</option>
               </select>
               <label>Gender:</label>
             </div>
             <div class="input-field col l3">
                 <select multiple>
                   <option class="race" value="" disabled selected></option>
-                  <option class="race" value="Native American or Alaskan Native">Native American or Alaskan Native</option>
-                  <option class="race" value="Asian">Asian</option>
-                  <option class="race" value="Black or African American">Black or African American</option>
-                  <option class="race" value="Hispanic or Latino">Hispanic or Latino</option>
-                  <option class="race" value="Native Hawaiian or Other Pacific Islanderd">Native Hawaiian or Other Pacific Islanderd</option>
+                  <option class="race" value="1">Native American or Alaskan Native</option>
+                  <option class="race" value="2">Asian</option>
+                  <option class="race" value="3">Black or African American</option>
+                  <option class="race" value="4">Hispanic or Latino</option>
+                  <option class="race" value="5">Native Hawaiian or Other Pacific Islanderd</option>
                 </select>
                 <label>Race:</label>
             </div>
@@ -85,38 +85,20 @@
             <div class="col l12 center">
                <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
             </div>
+            <div class="col l12 center">
+               <button class="btn waves-effect waves-light" id="clear">Clear Search</button>
+            </div>
           </div>
         </form>
       </div>
       <div class="row">
         <div class="col l12">
-          <h5 id="search">Problems matching your search:</h5>
-            <table id="table" class="table striped">
-              <thead>
-                <tr>
-                  <th>Id</th>
-                  <th>Age</th>
-                  <th>Gender</th>
-                  <th>Race</th>
-                  <th>Type</th>
-                  <th>Noun</th>
-                  <th>Action</th>
-                  <th>Reason</th>
-                  <th>Story</th>
-                </tr>
+          <div class="row" id="matches">
+          </div>
+            <table class="table striped">
+              <thead id="thead">
               </thead>
-              <tbody>
-                <!-- <tr>
-                  <td>Id</td>
-                  <td>Age</td>
-                  <td>Gender</td>
-                  <td>Race</td>
-                  <td>Type</td>
-                  <td>Noun</td>
-                  <td>Action</td>
-                  <td>Reason</td>
-                  <td>Story</td>
-                </tr> -->
+              <tbody id="tbody">
               </tbody>
             </table>
       </div>

@@ -4,7 +4,6 @@ TODO:
   - privacy policy page
   - link xperiencegarage.com to problem form
   - make fields required
-  - REFACTOR: change select and dropdown values to DB ids
   - reCAPTCHA
   - return general location not lat and long (Success message Boulder, Colorado)
   - move example lower, copy at top
@@ -23,12 +22,9 @@ TODO:
     - logic in server.js for 'other' topic option
 
   - query search page
-    - need function to clear search
-    - append column headers with submit
     - can only search by other, logic for if not one of these, show it.
     - full sentence for noun, action, reason
     - error message on query page where there are no problems matching search
-    - shorthand for race, gender and problem type
 
 - stretch
   - user login
@@ -43,7 +39,7 @@ TODO:
 
 - Presentation
   - Inspire people to vent
-  - setting up the context 
+  - setting up the context
   - Start by sharing xperiencegarage.com (follow path through the website)
   - trends in problems across demographics
   - diversity, prism of perspectives

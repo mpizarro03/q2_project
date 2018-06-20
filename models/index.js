@@ -10,19 +10,22 @@ function create(body) {
   const age = body.age
   const gender = body.gender
   const topic = body.topic
+  const newTopic = body.newTopic
   const race = body.race
   const problem = {
+    age: age,
+    gender_id: 1,
+    race_id: 1,
+    lat: lat,
+    long: long,
+    type_id: 1,
+    other: newTopic,
     noun: noun,
     action: action,
     reason: reason,
-    story: story,
-    lat: lat,
-    long: long,
-    age: age,
-    gender_id: 1,
-    type_id: 1,
-    race_id: 1
+    story: story
   }
+
   return knex('problems')
     .insert(problem)
 }

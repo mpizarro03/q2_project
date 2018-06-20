@@ -7,10 +7,10 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node ./bin/www",
     "knex": "knex",
     "heroku-postbuild": "knex migrate:rollback; knex migrate:latest; knex seed:run;",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "nodemon": "node server.js",
   },
   "repository": {
     "type": "git",

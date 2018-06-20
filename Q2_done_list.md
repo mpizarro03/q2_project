@@ -17,9 +17,14 @@
     - get all route
     - query page post route
     - post routes to get logins
+  - query search page
+    - need function to clear search
+    - can only select 1 from each from drop down
+    - selection to clear after "submit" is hit
 
   - stretch
     - bcrypt - auth
+
 
 
 ```

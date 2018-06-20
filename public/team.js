@@ -101,17 +101,7 @@ $(document).ready(function(){
 
     $.post('/team', query)
     .then((result) => {
-      // console.log("result:", result)
       for(let i = 0; i < result.length; i++){
-      // console.log("result[i].id:", result[i].id)
-      // console.log("result[i].age:", result[i].age)
-      // console.log("result[i].gender_id:", result[i].gender_id)
-      // console.log("result[i].race_id:", result[i].race_id)
-      // console.log("result[i].type_id:", result[i].type_id)
-      // console.log("result[i].noun:", result[i].noun)
-      // console.log("result[i].action:", result[i].action)
-      // console.log("result[i].reason:", result[i].reason)
-      // console.log("result[i].story:", result[i].story)
         let dataRow =
           `<tr>
             <td>${result[i].id}</td>

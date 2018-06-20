@@ -117,6 +117,7 @@ $(document).ready(function(){
         $('table').append(dataRow)
       }
     })
+
   })
 
   $.get('/team', function(data){

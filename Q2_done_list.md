@@ -3,7 +3,6 @@ TODO:
 - HTML  
   - privacy policy page
   - link xperiencegarage.com to problem form
-  - make fields required
   - reCAPTCHA
   - return general location not lat and long (Success message Boulder, Colorado)
   - move example lower, copy at top
@@ -12,10 +11,10 @@ TODO:
 - Styling:
   - Change <hr> color on problem form fields
   - style error messages
-  - age field label shrinks
   - example closer to problem madlib
   - age field smaller
   - answers in red, use Garamond
+  - style error message for no search results
 
 - backend
   - routes
@@ -24,7 +23,6 @@ TODO:
   - query search page
     - can only search by other, logic for if not one of these, show it.
     - full sentence for noun, action, reason
-    - error message on query page where there are no problems matching search
 
 - stretch
   - user login
@@ -36,6 +34,7 @@ TODO:
   - Full admin panel
   - keyword search
   - mark problems as shitty that we never want to see again
+  - make fields on problem form required
 
 - Presentation
   - Inspire people to vent

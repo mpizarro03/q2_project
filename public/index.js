@@ -2,22 +2,22 @@ $(document).ready(function(){
 
   const otherTopic =
     `<div class="input-field col s12 m8 l6">
-      <input placeholder="Other topic" id="type" type="text">
+      <input placeholder="Enter topic here" id="otherType" type="text">
     </div>`
 
   const start =
     `<div class="input-field col s12 m8 l6">
       <div class="row">
         <label for="noun">Wouldn't it be great if</label>
-        <textarea id="noun" class="materialize-textarea"></textarea>
+        <textarea id="noun" class="materialize-textarea" required></textarea>
       </div>
       <div class="row">
         <label for="action">would</label>
-        <textarea id="action" class="materialize-textarea"></textarea>
+        <textarea id="action" class="materialize-textarea" required></textarea>
       </div>
       <div class="row">
         <label for="reason">so that</label>
-        <textarea id="reason" class="materialize-textarea"></textarea>
+        <textarea id="reason" class="materialize-textarea" required></textarea>
       </div>
       <div class="row">
         <label for="story">Would you like to share anything else with us?</label>
@@ -46,8 +46,9 @@ $(document).ready(function(){
     </div>`
 
   $('#other').one('click', function(){
+    console.log("click is working")
     $('#topic').append(otherTopic)
-    ev.preventDefault();
+    event.preventDefault();
   })
 
   function success(position) {
@@ -112,6 +113,7 @@ $(document).ready(function(){
     let topicData = $('.topic:checked').val()
     let latitude = $('#lat').val()
     let longitude = $('#long').val()
+    let newTopic = $('#otherType').val()
 
     const formData = {
       "age": $('#age').val(),
@@ -125,6 +127,12 @@ $(document).ready(function(){
       "reason": $('#reason').val(),
       "story": $('#story').val(),
     }
+
+    if(newTopic){
+      formData.newTopic = newTopic
+    }
+
+    console.log(formData)
 
     function check(){
       if(!latitude && !longitude){

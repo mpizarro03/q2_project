@@ -4,13 +4,13 @@
   "description": "Q2 group project",
   "main": "server.js",
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node server.js",
     "knex": "knex",
     "heroku-postbuild": "knex migrate:rollback; knex migrate:latest; knex seed:run;",
     "nodemon": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {S
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/mpizarro03/q2_project.git"
   },

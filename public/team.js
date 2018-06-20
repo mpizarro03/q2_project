@@ -1,9 +1,33 @@
 $(document).ready(function(){
   $('select').formSelect();
   const test = "test"
+
   //form submit listener
   $('form').on('submit', function(event) {
     event.preventDefault()
+    $('#thead').empty()
+    $('#tbody').empty()
+    $('#matches').empty()
+
+    let thead =
+      `<tr>
+        <th>Id</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Race</th>
+        <th>Type</th>
+        <th>Noun</th>
+        <th>Action</th>
+        <th>Reason</th>
+        <th>Story</th>
+      </tr>`
+
+    let matches = `<h5 id="search">Problems matching your search:</h5>`
+
+    $('#matches').append(matches)
+    $('#thead').append(thead)
+
+
     let topicData = $('.topic:checked').val()
     let topic = parseInt(topicData)
     let raceData = $('.race:checked').val()
@@ -34,8 +58,6 @@ $(document).ready(function(){
       if(genderData) {
         query.genderData = gender
       }
-      console.log("topicData:", topicData)
-      console.log("topic:", topic)
       return
     }
 
@@ -46,6 +68,7 @@ $(document).ready(function(){
       let gender = ''
       let race = ''
       let type = ''
+
       for(let i = 0; i < result.length; i++){
       if(result[i].gender_id === 1){
         gender = "Gender Non Conforming"
@@ -131,6 +154,13 @@ $(document).ready(function(){
 
   $.get('/team', function(data){
 
+  })
+
+  $('#clear').on('click', function(event){
+    $('#matches').empty()
+    $('#thead').empty()
+    $('#tbody').empty()
+    event.preventDefault()
   })
 
 })

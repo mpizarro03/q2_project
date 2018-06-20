@@ -22,12 +22,9 @@ TODO:
     - logic in server.js for 'other' topic option
 
   - query search page
-    - need function to clear search
-    - append column headers with submit
     - can only search by other, logic for if not one of these, show it.
     - full sentence for noun, action, reason
     - error message on query page where there are no problems matching search
-    - shorthand for race, gender and problem type
 
 - stretch
   - user login

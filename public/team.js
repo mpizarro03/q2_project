@@ -16,9 +16,7 @@ $(document).ready(function(){
         <th>Gender</th>
         <th>Race</th>
         <th>Type</th>
-        <th>Noun</th>
-        <th>Action</th>
-        <th>Reason</th>
+        <th>Problem</th>
         <th>Story</th>
       </tr>`
 

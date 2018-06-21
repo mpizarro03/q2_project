@@ -1,9 +1,6 @@
 {
   "name": "q2_project",
   "version": "1.0.0",
-  "engines": {
-    "node": "v9.9.0"
-  },
   "description": "q2_project",
   "main": "knex.js",
   "scripts": {

@@ -46,7 +46,7 @@ $(document).ready(function(){
     </div>`
 
   $('#other').one('click', function(){
-    console.log("click is working")
+    $('#other').attr('checked')
     $('#topic').append(otherTopic)
     event.preventDefault();
   })

@@ -13,6 +13,10 @@ body {
   width: 65%
 }
 
+a {
+  color: #E11A2D
+}
+
 input {
   font-family: 'EB Garamond', serif;
   font-size: 18px;

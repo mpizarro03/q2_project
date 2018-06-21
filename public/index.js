@@ -9,15 +9,15 @@ $(document).ready(function(){
     `<div class="input-field col s12 m8 l6">
       <div class="row">
         <label for="noun">Wouldn't it be great if</label>
-        <textarea id="noun" class="materialize-textarea" required></textarea>
+        <textarea id="noun" class="materialize-textarea" placeholder="a person, place, organization, company" required></textarea>
       </div>
       <div class="row">
         <label for="action">would</label>
-        <textarea id="action" class="materialize-textarea" required></textarea>
+        <textarea id="action" class="materialize-textarea" placeholder="what should they do? or could they do?" required></textarea>
       </div>
       <div class="row">
         <label for="reason">so that</label>
-        <textarea id="reason" class="materialize-textarea" required></textarea>
+        <textarea id="reason" class="materialize-textarea" placeholder="What is the desired outcome?" required></textarea>
       </div>
       <div class="row">
         <label for="story">Would you like to share anything else with us?</label>
@@ -29,15 +29,15 @@ $(document).ready(function(){
     `<div class="input-field col s12 m8 l6">
       <div class="row">
         <label for="noun">It's terrible that</label>
-        <textarea id="noun" class="materialize-textarea"></textarea>
+        <textarea id="noun" class="materialize-textarea" placeholder="a person, place, organization, company" required></textarea>
       </div>
       <div class="row">
         <label for="action">is</label>
-        <textarea id="action" class="materialize-textarea"></textarea>
+        <textarea id="action" class="materialize-textarea" placeholder="what are they doing now that they should stop doing?" required></textarea>
         </div>
       <div class="row">
         <label for="reason">because</label>
-        <textarea id="reason" class="materialize-textarea"></textarea>
+        <textarea id="reason" class="materialize-textarea" placeholder="why is it terrible?" required></textarea>
       </div>
       <div class="row">
         <label for="story">Would you like to share anything else with us?</label>
@@ -84,14 +84,14 @@ $(document).ready(function(){
 
 //State dependent madlib:
 
-  $('.viewpoint1').on('click', function(){
+  $('#viewpoint1').on('click', function(){
     $('#madlib').empty()
     $('#madlib').append(start)
     this.attr('checked', 'checked')
     event.preventDefault();
   })
 
-  $('.viewpoint2').on('click', function(){
+  $('#viewpoint2').on('click', function(){
     $('#madlib').empty()
     $('#madlib').append(stop)
     this.attr('checked', 'checked')
@@ -110,14 +110,16 @@ $(document).ready(function(){
     let latitude = $('#lat').val()
     let longitude = $('#long').val()
     let newTopic = $('#otherType').val()
+    let viewpoint = $('.view:checked').val()
 
     const formData = {
       "age": $('#age').val(),
       "gender": genderData,
       "race": raceData,
+      "topic": topicData,
+      "viewpoint": viewpoint,
       "lat": null,
       "long": null,
-      "topic": topicData,
       "noun": $('#noun').val(),
       "action": $('#action').val(),
       "reason": $('#reason').val(),

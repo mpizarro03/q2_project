@@ -5,12 +5,10 @@ TODO:
   - link xperiencegarage.com to problem form
   - reCAPTCHA
   - return general location not lat and long (Success message Boulder, Colorado)
-  - move example lower, copy at top
   - header with logo
 
 - Styling:
-  - Change <hr> color on problem form fields
-  - style error messages
+  - style error states on form
   - example closer to problem madlib
   - age field smaller
   - answers in red, use Garamond

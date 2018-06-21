@@ -151,7 +151,6 @@ textarea.materialize-textarea {
 
 /* Buttons: Location, Submit */
 
-
   .btn, .btn-large, .btn-small {
     background-color: black;
     border-style: solid;
@@ -194,6 +193,8 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
   border-bottom: 1px solid #E11A2D;
   -webkit-box-shadow: 0 1px 0 0 #E11A2D;
   box-shadow: 0 1px 0 0 #E11A2D;
+
+
 
 .btn, .btn-large, .btn-small {
   background-color: black;

@@ -9,8 +9,7 @@ TODO:
   - header with logo
 
 - Styling:
-  - Change <hr> color on problem form fields
-  - style error messages
+  - style error states on form
   - example closer to problem madlib
   - age field smaller
   - answers in red, use Garamond

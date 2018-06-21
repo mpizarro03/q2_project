@@ -1,3 +1,10 @@
+/* FONTS */
+
+@import url("https://use.typekit.net/vpe6yui.css");
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Nunito+Sans:400,600');
+
+/* Mains */
+
 body {
   background-color: black
 }
@@ -6,10 +13,13 @@ body {
   width: 65%
 }
 
-/* FONTS */
+input{
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  color: red
+}
 
-  @import url("https://use.typekit.net/vpe6yui.css");
-  @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Nunito+Sans:400,600');
+
 
   h2 {
     font-family: 'Nunito Sans', sans-serif;
@@ -27,6 +37,9 @@ body {
   }
 
   #indent2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: white;
     margin-left: 10px
   }
 
@@ -34,7 +47,7 @@ body {
 
   label {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: white
   }
 
@@ -64,7 +77,7 @@ textarea.materialize-textarea {
 /* Radio field inputs */
 
   [type="radio"]+span {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'EB Garamond', serif;
     font-size: 16px;
     color: white
   }
@@ -89,7 +102,7 @@ textarea.materialize-textarea {
 /* Checkbox field inputs */
 
   [type="checkbox"]+span:not(.lever){
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'EB Garamond', serif;
     font-size: 16px;
     color: white
   }

@@ -1,3 +1,7 @@
+body {
+  padding-top: 60px
+}
+
 .container {
   width: 95%
 }
@@ -99,10 +103,22 @@ textarea.materialize-textarea {
 }
 
 .btn:hover, .btn-large:hover, .btn-small:hover {
-  background-color: #EE1B1F;
+  background-color: #E11A2D;
   border-style: solid;
   border-width: 2px;
-  border-color: black;
+  border-color: #E11A2D;
+  border-radius: 1px;
+  width: 140px;
+  color: white;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+
+.btn:focus, .btn-large:focus, .btn-small:focus{
+  background-color: #E11A2D;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E11A2D;
   border-radius: 1px;
   width: 140px;
   -webkit-box-shadow: none;

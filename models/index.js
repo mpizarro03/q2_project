@@ -1,17 +1,18 @@
 const knex = require('../knex.js')
 
 function create(body) {
+  const age = body.age
+  const gender = body.gender
+  const race = body.race
+  const topic = body.topic
+  const newTopic = body.newTopic
+  const viewpoint = body.viewpoint
   const noun = body.noun
   const action = body.action
   const reason = body.reason
   const story = body.story
   const lat = body.lat
   const long = body.long
-  const age = body.age
-  const gender = body.gender
-  const topic = body.topic
-  const newTopic = body.newTopic
-  const race = body.race
   const problem = {
     age: age,
     gender_id: 1,
@@ -20,6 +21,7 @@ function create(body) {
     long: long,
     type_id: 1,
     other: newTopic,
+    viewpoint: viewpoint,
     noun: noun,
     action: action,
     reason: reason,

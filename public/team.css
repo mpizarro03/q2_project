@@ -90,6 +90,17 @@ textarea.materialize-textarea {
     border-bottom: 2px solid black;
     color: black
 }
+
+.dropdown-content li>a, .dropdown-content li>span {
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  color: black
+}
+
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 2px solid #E11A2D
+}
+
 /* Buttons: Location, Submit */
 .btn, .btn-large, .btn-small {
   background-color: white;

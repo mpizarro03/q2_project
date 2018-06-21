@@ -9,8 +9,7 @@
   "scripts": {
     "start": "node server.js",
     "knex": "knex",
-    "heroku-postbuild": "knex migrate:rollback; knex migrate:latest; knex seed:run;",
-    "nodemon": "node server.js"
+    "heroku-postbuild": "knex migrate:rollback; knex migrate:latest; knex seed:run;"
   },
   "repository": {
     "type": "git",

@@ -22,7 +22,15 @@ $(document).ready(function(){
         <th>Story</th>
       </tr>`
 
-    let matches = `<h5 id="search">Problems matching your search:</h5>`
+    let matches =
+    `<div class="row">
+      <div class="col l12 left-align">
+         <h5 id="search">Problems matching your search:</h5>
+      </div>
+      <div class="col l12 right-align">
+         <button class="btn waves-effect waves-light" id="export" data-export="export">Export Search</button>
+      </div>
+    </div>`
 
     $('#matches').append(matches)
     $('#thead').append(thead)
@@ -157,6 +165,10 @@ $(document).ready(function(){
         }
       }
     })
+    $("#export").click(function(){
+      $("table").tableToCSV()
+    })
+
 
   })
 

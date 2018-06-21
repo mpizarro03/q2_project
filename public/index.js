@@ -57,12 +57,8 @@ $(document).ready(function(){
 
     const latLong =
       `<div class="row">
-        <label for="lat">Latitude</label>
-        <textarea id="lat" class="materialize-textarea">${latitude}</textarea>
-      </div>
-      <div class="row">
-        <label for="long">Longitude</label>
-        <textarea id="long" class="materialize-textarea">${longitude}</textarea>
+        <label for="location"></label>
+        <textarea id="location" class="materialize-textarea col s6 m6 l6">Boulder, Colorado</textarea>
       </div>`
 
     $('#latlong').append(latLong)

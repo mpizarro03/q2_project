@@ -5,13 +5,8 @@ TODO:
   - link xperiencegarage.com to problem form
   - reCAPTCHA
   - return general location not lat and long (Success message Boulder, Colorado)
-  - header with logo
 
 - Styling:
-  - style error states on form
-  - example closer to problem madlib
-  - age field smaller
-  - answers in red, use Garamond
   - style error message for no search results
 
 - backend
@@ -28,7 +23,6 @@ TODO:
     - bcrypt - auth
     - reset password
     - save favorites
-  - export to csv
   - Full admin panel
   - keyword search
   - mark problems as shitty that we never want to see again
@@ -40,6 +34,7 @@ TODO:
   - Start by sharing xperiencegarage.com (follow path through the website)
   - trends in problems across demographics
   - diversity, prism of perspectives
+  - Demo export to CSV
 
 
 

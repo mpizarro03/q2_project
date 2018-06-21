@@ -35,11 +35,17 @@ TODO:
   - make fields on problem form required
 
 - Presentation
-  - Inspire people to vent
-  - setting up the context
-  - Start by sharing xperiencegarage.com (follow path through the website)
-  - trends in problems across demographics
-  - diversity, prism of perspectives
+  - Intro: Inspire people to vent
+    - setting up the context
+    - Start by sharing xperiencegarage.com (follow path through the website)
+    - trends in problems across demographics
+    - diversity, prism of perspectives
+  - Demo:
+    - intake form
+    - query search page
+      - show a search all Problems
+      - show a search that has 4 parameters 
+      - export CSV
 
 
 

@@ -6,14 +6,9 @@ TODO:
 - Styling:
   - text in dropdowns on query page
 
-- backend
-  - routes
-    - logic in server.js for 'other' topic option
-    - multiple races
-    - paginate search results on query page
-
-  - query search page
-    - full sentence for noun, action, reason
+- db/query page
+  - multiple races
+  - paginate search results on query page
 
 - stretch
   - user login
@@ -34,8 +29,6 @@ TODO:
     - keyword search
     - mark problems as shitty that we never want to see again
     - star favorite problems saved per user
-
-
 
 ```
 

@@ -16,6 +16,7 @@ $(document).ready(function(){
         <th>Gender</th>
         <th>Race</th>
         <th>Type</th>
+        <th>Other</th>
         <th>Noun</th>
         <th>Action</th>
         <th>Reason</th>
@@ -73,16 +74,20 @@ $(document).ready(function(){
 
     $.post('/team', query)
     .then((result) => {
+      console.log(result)
       if(result.length === 0){
         $('#thead').empty()
         $('#tbody').empty()
         $('#matches').empty()
-        $('#matches').append(`No problems match your seach.`)
+        $('#matches').append(`<div class="col l12 center-align">
+           <h5>No problems match your search.</h5>
+        </div>`)
       }
       else {
         let gender = ''
         let race = ''
         let type = ''
+        let other = ''
 
         for(let i = 0; i < result.length; i++){
         if(result[i].gender_id === 1){
@@ -149,6 +154,10 @@ $(document).ready(function(){
           race = "White"
         }
 
+        if(result[i].other){
+          other = result[i].other
+        }
+
           let dataRow =
             `<tr>
               <td>${result[i].id}</td>
@@ -156,6 +165,7 @@ $(document).ready(function(){
               <td>${gender}</td>
               <td>${race}</td>
               <td>${type}</td>
+              <td>${other}</td>
               <td>${result[i].noun}</td>
               <td>${result[i].action}</td>
               <td>${result[i].reason}</td>

@@ -11,6 +11,7 @@ exports.up = function(knex, Promise) {
     table.integer('type_id').unsigned()
     table.foreign('type_id').references('types.id').onDelete('CASCADE')
     table.string('other', 100)
+    table.string('viewpoint', 100).notNullable()
     table.string('noun').notNullable()
     table.string('action').notNullable()
     table.string('reason').notNullable()

@@ -18,17 +18,34 @@ TODO:
     - save favorites
 
 - Presentation
+
+  - Intro: Inspire people to vent
+    - setting up the context
+    - Start by sharing xperiencegarage.com (follow path through the website)
+    - trends in problems across demographics
+    - diversity, prism of perspectives
+  - Demo:
+    - intake form
+    - query search page
+      - show a search all Problems
+      - show a search that has 4 parameters
+      - export CSV
+
   - Inspire people to vent
   - setting up the context
   - Start by sharing xperiencegarage.com
   - trends in problems across demographics
   - diversity, prism of perspectives
   - Demo export to CSV
+
   - Future Versions
     - Full admin panel
     - keyword search
     - mark problems as shitty that we never want to see again
     - star favorite problems saved per user
+
+
+
 
 ```
 

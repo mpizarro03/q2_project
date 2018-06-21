@@ -137,7 +137,6 @@ textarea.materialize-textarea {
 
 /* Buttons: Location, Submit */
 
-<<<<<<< HEAD
   .btn, .btn-large, .btn-small {
     background-color: black;
     border-style: solid;
@@ -170,7 +169,9 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
   border-bottom: 1px solid #e58200;
   -webkit-box-shadow: 0 1px 0 0 #e58200;
   box-shadow: 0 1px 0 0 #e58200;
-=======
+
+
+
 .btn, .btn-large, .btn-small {
   background-color: black;
   border-style: solid;
@@ -195,5 +196,5 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
   display: block;
   line-height: 20px;
   padding: 14px 16px;
->>>>>>> 171ae8f664c7de80b55b33ee64d6cda0ad3a67eb
+
 }

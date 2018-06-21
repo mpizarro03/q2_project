@@ -2,15 +2,14 @@
   "name": "q2_project",
   "version": "1.0.0",
   "engines": {
-    "node": "v9.9.0"
+    "node": "v10.4.0"
   },
   "description": "q2_project",
   "main": "knex.js",
   "scripts": {
     "start": "node server.js",
     "knex": "knex",
-    "heroku-postbuild": "knex migrate:rollback; knex migrate:latest; knex seed:run;",
-    "nodemon": "node server.js"
+    "heroku-postbuild": "knex migrate:rollback; knex migrate:latest; knex seed:run;"
   },
   "repository": {
     "type": "git",

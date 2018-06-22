@@ -51,8 +51,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_table
 
     - query search page
       - show a search all Problems
+        - export CSV
       - show a search that has 4 parameters
-      - export CSV
       -    - trends in problems across demographics
           - diversity, prism of perspectives
   - Inspire people to vent
@@ -65,7 +65,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_table
   - Version 1.2
     - keyword search
     - paginate search results on query page
-    - Password protected/User     authentication
+    - Password protected/User authentication
     - Full admin panel for Colleen to manage users
     - users ability to save specific problems and mark problems as unhelpful/spam
 

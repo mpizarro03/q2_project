@@ -69,12 +69,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_table
     - Full admin panel for Colleen to manage users
     - users ability to save specific problems and mark problems as unhelpful/spam
 
-- Bugs
-  - Location is appending twice
-  - query sentence
-  - Success mesage after form is submitted
-
-
 ```
 
 Done List

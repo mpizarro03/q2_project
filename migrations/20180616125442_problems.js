@@ -1,7 +1,7 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('problems', table => {
     table.increments()
-    table.integer('age').notNullable()
+    table.integer('age')
     table.integer('gender_id').unsigned()
     table.foreign('gender_id').references('genders.id').onDelete('CASCADE')
     table.integer('race_id').unsigned()
@@ -11,11 +11,11 @@ exports.up = function(knex, Promise) {
     table.integer('type_id').unsigned()
     table.foreign('type_id').references('types.id').onDelete('CASCADE')
     table.string('other', 100)
-    table.string('viewpoint', 100).notNullable()
+    table.string('viewpoint', 100)
     table.string('noun').notNullable()
     table.string('action').notNullable()
     table.string('reason').notNullable()
-    table.string('story', 1000).notNullable()
+    table.string('story', 1000)
     table.timestamp("created_at").defaultTo(knex.fn.now())
   })
 };

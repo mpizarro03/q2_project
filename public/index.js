@@ -55,13 +55,15 @@ $(document).ready(function(){
     let latitude  = position.coords.latitude;
     let longitude = position.coords.longitude;
 
-    const latLong =
+    const location =
       `<div class="row">
         <label for="location"></label>
         <textarea id="location" class="materialize-textarea col s6 m6 l6">Boulder, Colorado</textarea>
       </div>`
 
-    $('#latlong').append(latLong)
+    $('#latlong').empty()
+    $('#latlong').append(location)
+    event.preventDefault();
 
     // console.log('Latitude is ' + latitude + '° Longitude is ' + longitude + '°')
   }

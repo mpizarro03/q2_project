@@ -4,13 +4,11 @@ TODO:
   - reCAPTCHA
 
 - Styling:
+  - text in dropdowns on query page
 
-- backend
-  - routes
-    - logic in server.js for 'other' topic option
-
-  - query search page
-    - full sentence for noun, action, reason
+- db/query page
+  - multiple races
+  - paginate search results on query page
 
 - stretch
   - user login

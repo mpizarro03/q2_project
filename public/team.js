@@ -17,9 +17,7 @@ $(document).ready(function(){
         <th>Race</th>
         <th>Type</th>
         <th>Other</th>
-        <th>Noun</th>
-        <th>Action</th>
-        <th>Reason</th>
+        <th>Problem</th>
         <th>Story</th>
       </tr>`
 
@@ -88,6 +86,7 @@ $(document).ready(function(){
         let race = ''
         let type = ''
         let other = ''
+        let problem = ''
 
         for(let i = 0; i < result.length; i++){
         if(result[i].gender_id === 1){
@@ -153,9 +152,16 @@ $(document).ready(function(){
         if(result[i].race_id === 6){
           race = "White"
         }
-
         if(result[i].other){
           other = result[i].other
+        }
+        if(result[i].viewpoint === 'happen'){
+          problem = `Wouldn't it be great if ${result[i].noun} would ${result[i].action} so that ${result[i].action}.`
+          console.log('happen')
+        }
+        if(result[i].viewpoint === 'stop'){
+          problem = `It's terrible that ${result[i].noun} is ${result[i].action} because ${result[i].action}.`
+          console.log('stop')
         }
 
           let dataRow =
@@ -166,9 +172,7 @@ $(document).ready(function(){
               <td>${race}</td>
               <td>${type}</td>
               <td>${other}</td>
-              <td>${result[i].noun}</td>
-              <td>${result[i].action}</td>
-              <td>${result[i].reason}</td>
+              <td>${problem}</td>
               <td>${result[i].story}</td>
             </tr>`
           $('table').append(dataRow)

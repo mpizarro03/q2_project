@@ -1,16 +1,29 @@
-TODO:
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_table
+Last minute:
 - HTML  
   - reCAPTCHA
 
-- Styling:
-  - text in dropdowns on query page
+Technologies:
+
+FrontEnd:
+- Materialize Frame work
+- HTML
+- CSS
+- Javascript
+Backend:
+- Node JS
+- Knex
+- Javascript
+- Postgresql
+
+
+
+TODO:
 
 - db/query page
   - multiple races
   - paginate search results on query page
 http://holgerbrandl.github.io/r/2015/03/12/sortable-searchable-paginated-tables-with-knitr-and-jquerydatatables.html
-
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_table
 - stretch
   - user login
     - post routes to get logins
@@ -23,15 +36,25 @@ http://holgerbrandl.github.io/r/2015/03/12/sortable-searchable-paginated-tables-
   - Intro: Inspire people to vent
     - setting up the context
     - Start by sharing xperiencegarage.com (follow path through the website)
-    - trends in problems across demographics
-    - diversity, prism of perspectives
+
   - Demo:
     - intake form
+      Age: 29
+      Gender Identity: Gender non-conforming
+      Race: Asian
+      My topic: Education/schools
+      -I want something to happen
+      -Public schools
+      provide healthier meals
+      children are eating nutritious food which will help them concentrate and provide a good foundation to healthy eating habits.
+
+
     - query search page
       - show a search all Problems
       - show a search that has 4 parameters
       - export CSV
-
+      -    - trends in problems across demographics
+          - diversity, prism of perspectives
   - Inspire people to vent
   - setting up the context
   - Start by sharing xperiencegarage.com
@@ -39,15 +62,17 @@ http://holgerbrandl.github.io/r/2015/03/12/sortable-searchable-paginated-tables-
   - diversity, prism of perspectives
   - Demo export to CSV
 
-  - Future Versions
-    - Full admin panel
+  - Version 1.2
     - keyword search
-    - mark problems as shitty that we never want to see again
-    - star favorite problems saved per user
+    - paginate search results on query page
+    - Password protected/User     authentication
+    - Full admin panel for Colleen to manage users
+    - users ability to save specific problems and mark problems as unhelpful/spam
 
 - Bugs
   - Location is appending twice
-  - query sentense
+  - query sentence
+  - Success mesage after form is submitted
 
 
 ```

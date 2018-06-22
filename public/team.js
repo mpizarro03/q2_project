@@ -160,7 +160,7 @@ $(document).ready(function(){
           console.log('happen')
         }
         if(result[i].viewpoint === 'stop'){
-          problem = `It's terrible that ${result[i].noun} is ${result[i].action} because ${result[i].action}.`
+          problem = `It's terrible that ${result[i].noun} is/are ${result[i].action} because ${result[i].reason}.`
           console.log('stop')
         }
 

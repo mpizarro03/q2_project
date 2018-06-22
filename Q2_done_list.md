@@ -46,7 +46,9 @@ TODO:
     - mark problems as shitty that we never want to see again
     - star favorite problems saved per user
 
-
+- Bugs
+  - Location is appending twice
+  - query sentense
 
 
 ```

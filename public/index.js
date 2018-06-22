@@ -105,14 +105,14 @@ $(document).ready(function(){
   $('#viewpoint1').on('click', function(){
     $('#madlib').empty()
     $('#madlib').append(start)
-    $('#viewpoint1').attr('checked', 'checked')
+    this.attr('checked', 'checked')
     event.preventDefault();
   })
 
   $('#viewpoint2').on('click', function(){
     $('#madlib').empty()
     $('#madlib').append(stop)
-    $('#viewpoint2').attr('checked', 'checked')
+    this.attr('checked', 'checked')
     event.preventDefault();
   })
 

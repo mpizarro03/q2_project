@@ -1,5 +1,5 @@
 TODO:
-
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_table
 - HTML  
   - reCAPTCHA
 
@@ -9,6 +9,7 @@ TODO:
 - db/query page
   - multiple races
   - paginate search results on query page
+http://holgerbrandl.github.io/r/2015/03/12/sortable-searchable-paginated-tables-with-knitr-and-jquerydatatables.html
 
 - stretch
   - user login

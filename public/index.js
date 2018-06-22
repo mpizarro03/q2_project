@@ -120,8 +120,12 @@ $(document).ready(function(){
   // materialize for dropdown menu
   $('select').formSelect()
 
+  $(.g-recaptcha).on('click', function(){
+    $.post('', )
+  })
+
   //form submit listener
-  $('form').on('submit', function(event){
+  $('#form').on('submit', function(event){
     event.preventDefault()
     let raceData = $('.race:checked').val()
     let genderData = $('.gender:checked').val()

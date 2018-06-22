@@ -2,11 +2,7 @@ exports.up = function(knex, Promise) {
   return knex.schema.createTable('problems', table => {
     table.increments()
     table.integer('age')
-<<<<<<< HEAD
-    table.integer('gender_id').unsigned()
-=======
     table.integer('gender_id')
->>>>>>> 5bfcdbcfea94b037832b66bc372c8423665db481
     table.foreign('gender_id').references('genders.id').onDelete('CASCADE')
     table.integer('race_id')
     table.foreign('race_id').references('races.id').onDelete('CASCADE')

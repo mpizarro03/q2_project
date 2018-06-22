@@ -32,7 +32,7 @@ $(document).ready(function(){
         <textarea id="noun" class="materialize-textarea" placeholder="a person, place, organization, company" required></textarea>
       </div>
       <div class="row">
-        <label for="action">is</label>
+        <label for="action">is/are</label>
         <textarea id="action" class="materialize-textarea" placeholder="what are they doing now that they should stop doing?" required></textarea>
         </div>
       <div class="row">
@@ -44,6 +44,23 @@ $(document).ready(function(){
         <textarea id="story" class="materialize-textarea"></textarea>
       </div>
     </div>`
+
+    const message =
+      `<h2 class="col l12 center-align section">Thank you for sharing your thoughts.</h2>
+      <div class="row section">
+        <div class="col l12 center-align">
+          <div class="row center-align">
+            <div class="col l6 right-align">
+               <a href="https://xgarage.herokuapp.com/"><button class="btn waves-effect waves-light">Share another idea</button></a>
+            </div>
+            <div class="col l6">
+              <div class="col l6 left-align">
+                 <a href="https://xgarage.herokuapp.com/"><button class="btn waves-effect waves-light">Visit XGarage</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`
 
   $('#other').one('click', function(){
     $('#other').attr('checked')
@@ -132,17 +149,12 @@ $(document).ready(function(){
       formData.newTopic = newTopic
     }
 
-    console.log(formData)
-
     function check(){
       if(!latitude && !longitude){
         return
       }
-      // if(!$('#lat').val() && !$('#long').val()){
-      //   return
-      // }
+
       else {
-        console.log('heres a lat')
         formData.lat = latitude
         formData.long = longitude
       }
@@ -155,13 +167,8 @@ $(document).ready(function(){
        .then((result) => {
          console.log(result)
        })
+
+    $('.container').empty()
+    $('.container').append(message)
   })
-  //stretch goal
-  // $('form').on('submit', function(e){
-  //   e.preventDefault()
-  //   $.post('http://localhost:3000/', $(this).serialize())
-  //     .then((result) => {
-  //       $('#result').html(result)
-  //     })
-  // })
 })

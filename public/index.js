@@ -165,10 +165,8 @@ $(document).ready(function(){
 
     $.post('/', formData)
        .then((result) => {
-         console.log(result)
+         $('.container').empty()
+         $('.container').append(message)
        })
-
-    $('.container').empty()
-    $('.container').append(message)
   })
 })

@@ -156,12 +156,12 @@ $(document).ready(function(){
           other = result[i].other
         }
         if(result[i].viewpoint === 'happen'){
-          problem = `Wouldn't it be great if ${result[i].noun} would ${result[i].action} so that ${result[i].action}.`
-          console.log('happen')
+          problem = `Wouldn't it be great if ${result[i].noun} would ${result[i].action} so that ${result[i].reason}.`
+          console.log("start", result[i])
         }
         if(result[i].viewpoint === 'stop'){
           problem = `It's terrible that ${result[i].noun} is/are ${result[i].action} because ${result[i].reason}.`
-          console.log('stop')
+          console.log("stop", result[i])
         }
 
           let dataRow =

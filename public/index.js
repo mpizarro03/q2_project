@@ -80,7 +80,6 @@ $(document).ready(function(){
 
     $('#latlong').empty()
     $('#latlong').append(location)
-    event.preventDefault();
 
     // console.log('Latitude is ' + latitude + '° Longitude is ' + longitude + '°')
   }
@@ -106,14 +105,14 @@ $(document).ready(function(){
   $('#viewpoint1').on('click', function(){
     $('#madlib').empty()
     $('#madlib').append(start)
-    this.attr('checked', 'checked')
+    $('#viewpoint1').attr('checked', 'checked')
     event.preventDefault();
   })
 
   $('#viewpoint2').on('click', function(){
     $('#madlib').empty()
     $('#madlib').append(stop)
-    this.attr('checked', 'checked')
+    $('#viewpoint2').attr('checked', 'checked')
     event.preventDefault();
   })
 

@@ -80,7 +80,6 @@ $(document).ready(function(){
 
     $('#latlong').empty()
     $('#latlong').append(location)
-    event.preventDefault();
 
     // console.log('Latitude is ' + latitude + '° Longitude is ' + longitude + '°')
   }
@@ -119,10 +118,6 @@ $(document).ready(function(){
 
   // materialize for dropdown menu
   $('select').formSelect()
-
-  $(.g-recaptcha).on('click', function(){
-    $.post('', )
-  })
 
   //form submit listener
   $('#form').on('submit', function(event){
@@ -169,9 +164,7 @@ $(document).ready(function(){
 
     $.post('/', formData)
        .then((result) => {
-         console.log(result)
        })
-
     $('.container').empty()
     $('.container').append(message)
   })

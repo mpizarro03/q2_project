@@ -9,7 +9,9 @@ router.post('/login', ctrl.login)
 router.get('/team', ctrl.getAll)
 router.post('/team', ctrl.query)
 
-
+//routes for users and auth
+// router.use('/auth', auth);
+// router.use('/users', users);
 
 //Stretch goals:
 //route for getting team members user info(admin page)

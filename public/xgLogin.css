@@ -16,6 +16,43 @@ img {
     width:250px;
     height: auto;
 }
+/*do I need .highlight*/
+.highlight {
+    color: #EE1B1F;
+    font-weight: 600;
+}
+  /* Form field labels */
+
+label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  color: black
+}
+
+.input-field>label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+      color: black
+}
+
+/* Header/Logo */
+img {
+    width:250px;
+    height: auto;
+}
+/* Form field labels */
+
+label {
+font-family: 'Nunito Sans', sans-serif;
+font-size: 16px;
+color: black
+}
+
+.input-field>label {
+font-family: 'Nunito Sans', sans-serif;
+font-size: 16px;
+    color: black
+}
 /* Text inputs */
 input[type=number]:not(.browser-default) {
   border-bottom: 2px solid white;
@@ -31,6 +68,7 @@ input[type=number]::-webkit-outer-spin-button {
 textarea.materialize-textarea {
   color: white
 }
+
 /* Buttons: Location, Submit */
 .btn, .btn-large, .btn-small {
   background-color: white;

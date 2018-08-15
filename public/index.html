@@ -1,200 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <!--Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!--materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-
-    <!--typekit-->
-    <link rel="stylesheet" href="https://use.typekit.net/vpe6yui.css">
-
     <link rel="stylesheet" href="style.css">
-
     <!--mobile optimization-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
     <title>Xperience Garage</title>
-
     <!--reCAPTCHA-->
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
-
   <body>
-    <div class="container section">
-      <div class="row">
-        <header class="col l12">
-          <img src="logo3.png" alt="Xperience Garage">
-        </header>
+    <div class="container">
+      <div class="header">
+        <div class="row">
+          <img src="./logo1.png"/>
+        </div>
       </div>
-
-      <!--Why you are here-->
-      <div class="row">
-        <h2 class="col s12 m10 l8">Have you ever said the words, <span class="highlight">"There has to be a better way?"</span></h2>
+      <div class="intro">
+        <div class="row">
+          <h3>Have you ever said the words...</h3>
+        </div>
+        <div class="row">
+          <h1 class="emphasis">There has to be a better way?</h1>
+        </div>
+        <div class="row">
+          <h3>If you’ve ever felt frustrated or irked by something in our society that seems outdated and in desperate need of change - you are not alone. Xperience Garage is looking for opportunities to make high-impact change one problem at a time. So, what's on your mind?</h3>
+        </div>
       </div>
-      <div class="row">
-        <h2 class="col s12 m10 l8">If you’ve ever felt <span class="highlight">frustrated or irked</span> by something in our society, environment, or a social construct that seems outdated and in desperate need of change - <span class="highlight">you are not alone.</span> The XG collective is looking for opportunities to make <span class="highlight">high-impact change one problem at a time.</span></h2>
-      </div>
-      <div class="row">
-        <h2 class="col s12 m10 l8">So, what's on your mind?</h2>
-      </div>
+      <div class="form">
+        <!-- demographic section -->
+        <!-- problem section -->
 
-      <!--Form-->
-      <div class="row">
-        <form id="form" name="form" class="col s12 m10 l10">
-          <div class="row">
-
-            <!--About me section-->
-            <h2 class="section">About me...</h2>
-            <div class="input-field col s2 m2 l2">
-              <label>Age</label>
-              <input id="age" name="age" type="number" max="150" maxlength="3" placeholder="">
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s6 m6 l3">
-              <select id="gender">
-                <option class="gender" value=""disabled selected>Choose one</option>
-                <option class="gender" value="1">Gender Non Conforming</option>
-                <option class="gender" value="2">Transgender Woman</option>
-                <option class="gender" value="3">Transgender Man</option>
-                <option class="gender" value="4">Female</option>
-                <option class="gender" value="5">Male</option>
-                <option class="gender" value="6">Other</option>
-                <option class="gender" value="7">Prefer not to say</option>
-              </select>
-              <label>Gender Identity</label>
-            </div>
-          </div>
-          <div class="row">
-            <label id="indent1" class="row">Race (Select all that apply)</label>
-            <div id="raceOption" class="input-field col s12 m8 l8">
-              <p>
-                <label>
-                  <input class="race" type="checkbox" name="race" value="1">
-                  <span>Native American or Alaskan Native</span><br>
-                </label>
-                <label>
-                  <input class="race" type="checkbox" name="race" value="2">
-                  <span>Asian</span><br>
-                </label>
-                <label>
-                  <input class="race" type="checkbox" name="race" value="3">
-                  <span>Black or African American</span><br>
-                </label>
-                <label>
-                  <input class="race" type="checkbox" name="race" value="4">
-                  <span>Hispanic or Latino</span><br>
-                </label>
-                <label>
-                  <input class="race" type="checkbox" name="race" value="5">
-                  <span>Native Hawaiian or Other Pacific Islander</span><br>
-                </label>
-                <label>
-                  <input class="race" type="checkbox" name="race" value="6">
-                  <span>White</span>
-                </label>
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <button class="btn waves-effect waves-light" id="location" name="location">Location</button>
-          </div>
-          <div id="latlong">
-          </div>
-
-<!--Problem section-->
-          <div class="row section">
-            <h2 class="row">My topic is related to...</h2>
-            <div id="topic" class="input-field col s12 m8 l8">
-              <p>
-                <label>
-                  <input class="topic" value="1" name="group1" type="radio" checked/>
-                  <span>Environment/Nature</span><br>
-                </label>
-                <label>
-                  <input class="topic" value="2" name="group1" type="radio"/>
-                  <span>Community/Neighborhood</span><br>
-                </label>
-                <label>
-                  <input class="topic" value="3" name="group1" type="radio"/>
-                  <span>Politics/Human Rights/Greater Good</span><br>
-                </label>
-                <label>
-                  <input class="topic" value="4" name="group1" type="radio"/>
-                  <span>Company/Organization</span><br>
-                </label>
-                <label>
-                  <input class="topic" value="5" name="group1" type="radio"/>
-                  <span>Products/Services</span><br>
-                </label>
-                <label>
-                  <input class="topic" value="6" name="group1" type="radio"/>
-                  <span>Family/Personal</span><br>
-                </label>
-                <label>
-                  <input class="topic" value="7" name="group1" type="radio"/>
-                  <span>Education/Schools</span><br>
-                </label>
-                <label>
-                  <input class="topic" value="8" id="other" name="group1" type="radio"/>
-                  <span>Other</span><br>
-                </label>
-              </p>
-            </div>
-          </div>
-
-<!--Example Header-->
-          <div class="row">
-            <h2>Example:</h2>
-          </div>
-          <div class="row">
-            <h2 class="col s12 m10 l8">Wouldn’t it be great if <span class="highlight">all restaurants and offices</span><br>would<span class="highlight"> be required to use compostable or recyclable packaging</span><br>so that<span class="highlight"> we would put less plastic and styrofoam into the landfills and oceans.</span></h2>
-          </div>
-
-          <div class="row">
-            <label>I want something to...</label>
-            <p>
-              <label>
-                <input value="happen" id="viewpoint1" class="view" name="group2" type="radio"/>
-                <span>happen.</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="stop" id="viewpoint2" class="view" name="group2" type="radio"/>
-                <span>stop.</span>
-              </label>
-            </p>
-          </div>
-          <div id="madlib" class="row">
-          </div>
-          <div class="row">
-            <p>
-              <label>
-                <input name="checkbox" type="checkbox" class="filled-in"/>
-                <span>I agree to the Xperience Garage <a target="_blank"  href="http://www.xperiencegarage.com/privacy-policy">Privacy Policy</a></span>
-              </label>
-            </p>
-          </div>
-          <div class="row">
-            <button class="btn waves-effect waves-light" id="submit-query" type="submit" name="action">Submit
-            </button>
-          </div>
-        </form>
       </div>
     </div>
-
-    <!--jQuery-->
-    <script       src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous">
-    </script>
-
-    <!--Import materialize.min.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-
     <!--index.js-->
     <script type="text/javascript" src="index.js">
     </script>

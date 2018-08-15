@@ -1,209 +1,61 @@
-/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800');
 
-@import url("https://use.typekit.net/vpe6yui.css");
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Nunito+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
+
 /* Mains */
 
 body {
-  background-color: black;
-  padding-top: 100px
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .container {
-  width: 65%
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: pink; */
 }
 
-a {
-  color: #E11A2D
+.header {
+  display: flex;
+  flex-direction: column;
+  /* background-color: lightgreen; */
 }
 
-input {
-  font-family: 'EB Garamond', serif;
-  font-size: 18px;
-  color: red
+.intro {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-left: 30px;
+
+  /* background-color: lightblue; */
+}
+.row {
+
 }
 
 img {
   width: 250px;
   height: auto;
 }
-
-h2 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 26px;
-  color: white
-}
-
-.highlight {
-  color: #E11A2D;
+h1 {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-}
-
-#indent1 {
-  margin-left: 10px
-}
-
-#indent2 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 16px;
-  color: white;
-  margin-left: 10px
-}
-
-/* Form field labels */
-
-label {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 18px;
-  color: white
-}
-
-.input-field>label {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 16px;
-  color: white
-}
-
-/* Text inputs */
-
-input[type=number]:not(.browser-default) {
-  border-bottom: 2px solid white;
-  color: white
-}
-
-input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-textarea.materialize-textarea {
-  border-bottom: 2px solid white;
-  font-family: 'EB Garamond', serif;
-  font-size: 16px;
-  color: white
-}
-
-/* Radio field inputs */
-
-[type="radio"]+span {
-  font-family: 'EB Garamond', serif;
-  font-size: 16px;
-  color: white
-}
-
-[type="radio"]:not(:checked)+span:before, [type="radio"]:not(:checked)+span:after {
-  color: white;
-  border-color: white
-}
-
-[type="radio"]:checked+span:before, [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
-  color: white;
-  background-color: #E11A2D;
-  border-color: #E11A2D
-}
-
-[type="radio"]:not(:checked)+span, [type="radio"]:checked+span {
-  font-size: 16px;
-}
-
-/* Checkbox field inputs */
-
-[type="checkbox"]+span:not(.lever) {
-  font-family: 'EB Garamond', serif;
-  font-size: 16px;
-  color: white
-}
-
-[type="checkbox"]:checked+span:not(.lever):before, [type="checkbox"]:checked+span:not(.lever):before {
-  border-right: 2px solid #E11A2D;
-  border-bottom: 2px solid #E11A2D
-}
-
-[type="checkbox"]+span:not(.lever):before, [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
-  border: 2px solid white;
-  font-size: 16px;
-  color: white
-}
-
-[type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
-  border: 2px solid white;
-  font-size: 16px;
-}
-
-[type="checkbox"].filled-in:checked+span:not(.lever):after {
-  border: 2px solid red;
-  background-color: red;
-  font-size: 16px
-}
-
-/* Dropdowns */
-
-.select-wrapper input.select-dropdown {
-  border-bottom: 2px solid white;
-  color: white
-}
-
-.dropdown-content li>a, .dropdown-content li>span {
-  font-family: 'EB Garamond', serif;
-  font-size: 16px;
-  color: black
-}
-
-.select-wrapper input.select-dropdown:focus {
-    border-bottom: 2px solid #E11A2D
-}
-
-/* Buttons: Location, Submit */
-
-.btn, .btn-large, .btn-small {
-  background-color: black;
-  border-style: solid;
-  border-width: 2px;
-  border-color: white;
-  width: 200px
-}
-
-.btn:hover, .btn-large:hover, .btn-small:hover {
-  background-color: #E11A2D;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #E11A2D;
-  border-radius: 1px;
-  width: 200px
-}
-
-.btn:focus, .btn-large:focus, .btn-small:focus{
-  background-color: #E11A2D;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #E11A2D;
-  border-radius: 1px;
-  width: 200px
-}
-
-  input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #E11A2D;
-  -webkit-box-shadow: 0 1px 0 0 #E11A2D;
-  box-shadow: 0 1px 0 0 #E11A2D;
-}
-
-input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #E11A2D;
-  -webkit-box-shadow: 0 1px 0 0 #E11A2D;
-  box-shadow: 0 1px 0 0 #E11A2D;
-}
-
-input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #E11A2D;
-  -webkit-box-shadow: 0 1px 0 0 #E11A2D;
-  box-shadow: 0 1px 0 0 #E11A2D;
-
-.dropdown-content li>a, .dropdown-content li>span {
-  font-family: 'EB Garamond', serif;
-  font-size: 16px;
+  font-size: 32px;
+  line-height: 30px;
   color: black;
-  display: block;
-  line-height: 20px;
-  padding: 14px 16px;
+}
 
+.emphasis {
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Lora', serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  color: black;
 }
